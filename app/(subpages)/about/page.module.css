@@ -1,0 +1,51 @@
+.list li {
+    font-size: 14px;
+    list-style-type: disc;
+    margin: 15px 25px;
+    font-size: 16px;
+ }
+
+ .splitted {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: calc(100vh - 115px - 150px);
+    height: 100%;
+ }
+
+ .splitted div {
+    padding: 10px;
+ }
+
+ .leftPanel {
+    width: 60%;
+ }
+
+ .leftPanel > p {
+   font-size: 16px;
+ }
+
+ .rightPanel {
+    width: 40%;
+ }
+
+ .founder {
+    float: left;
+    margin-right: 15px;
+ }
+
+ .aboutBox {
+    background-color: #a98261;
+    width: 100%;
+    height: auto;
+    padding: 3%;
+    color: #FFFFFF;
+ }
+
+ .aboutBox h4 {
+    margin: 10px 0px 30px;
+ }
+
+ .aboutBox p {
+    text-align: justify;
+ }

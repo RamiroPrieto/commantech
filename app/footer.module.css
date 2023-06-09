@@ -1,0 +1,27 @@
+.reserved {
+    width: 100%;
+    background-color: #767c7c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .footer {
+    padding-top: 1.2px;
+  }
+  
+  .footercontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .contactUs {
+    text-align: end;
+    width: 333px;
+  }
+  
+  .footercontainer > p {
+    width: 333px;
+  }

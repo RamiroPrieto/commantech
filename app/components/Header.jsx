@@ -1,15 +1,16 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import styles from '../page.module.css'
+import '../globals.css'
+import headerStyles from '../header.module.css'
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-        <div className={styles.headercontainer}>
-            <div className={styles.headerlogo}>
+    <header className={headerStyles.header}>
+        <div className={headerStyles.headercontainer}>
+            <div className={headerStyles.headerlogo}>
                 <Link href="/">
                     <Image
-                        className={styles.logo}
+                        className={headerStyles.logo}
                         src="/logo.png"
                         alt="Commantech Logo"
                         width={150}
@@ -18,7 +19,7 @@ const Header = () => {
                     />
                 </Link>
             </div>
-            <div className={styles.headerlinks}>
+            <div className={headerStyles.headerlinks}>
                 <Link href="/">Home</Link>
                 <Link href="/about">About Us</Link>
                 <Link href="/services">Services</Link>

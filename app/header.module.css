@@ -1,0 +1,42 @@
+
+
+.header {
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+  }
+  
+  .headercontainer {
+    display: flex;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .headerlogo {
+    width: 160px;
+    margin-right: 30px;
+  }
+  
+  .headerlinks {
+    width: -webkit-fill-available;
+    background-color: rgb(118, 124, 124);
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    box-sizing: border-box;
+    color: rgb(33, 37, 41);
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 5% 5px 5%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    justify-content: space-around;
+    display: flex;
+    height: fit-content;
+  }
+  
+  .headerlinks a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }

@@ -1,0 +1,61 @@
+.imagebutton {
+  background-color: #a98261b8;
+  color: white;
+  padding: 10px 25px;
+  border-bottom-left-radius: 20% 50%;
+
+  width: min-content;
+  position: absolute;
+  bottom: -40px;
+  right: 0px;
+}
+
+.linkcontainer {
+  width: 300px;
+}
+
+.linkcontainer a {
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: space-around;
+  height: 100vh;
+  align-content: space-around;
+}
+
+.gridfull {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  justify-content: center;
+  align-content: center;
+  min-height: calc(100vh - 115px - 150px);
+  height: 100%;
+}
+
+.service {
+  margin: 25px;
+}
+
+.service p {
+  padding-top: 15px;
+}
+
+.service img {
+  float: left;
+  margin-right: 15px;
+}
+
+.linkcontainer {
+  transition: transform 500ms;
+}
+
+.linkcontainer:hover {
+  transform: translateX(-10px) translateY(-10px);
+}
+
+.linkcontainer:hover .imagebutton {
+  background-color: #a98161d6;
+}
