@@ -1,0 +1,44 @@
+.list li {
+    font-size: 14px;
+    margin-left: 10px;
+    list-style-type: circle;
+ }
+
+ .splitted {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+ }
+
+ .splitted div {
+    padding: 10px;
+ }
+
+ .leftPanel {
+    width: 60%;
+ }
+
+ .rightPanel {
+    width: 40%;
+ }
+
+ .founder {
+    float: left;
+    margin-right: 15px;
+ }
+
+ .aboutBox {
+    background-color: #a98261;
+    width: 100%;
+    height: auto;
+    padding: 3%;
+    color: #FFFFFF;
+ }
+
+ .aboutBox h4 {
+    margin: 10px 0px 30px;
+ }
+
+ .aboutBox p {
+    text-align: justify;
+ }
