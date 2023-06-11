@@ -1,5 +1,6 @@
 import EmblaCarousel from "./components/Carousel";
 import ServicesPreview from "./components/ServicesPreview";
+import ClientsPreview from "./components/ClientsPreview";
 import styles from './page.module.css'
 
 const OPTIONS = { loop: true }
@@ -13,6 +14,7 @@ export default function Home() {
     <EmblaCarousel slides={SLIDES} options={OPTIONS} />
     <main>
       <ServicesPreview/>
+      <ClientsPreview/>
     </main>
     </>
     

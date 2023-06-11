@@ -11,7 +11,7 @@ const Header = () => {
                 <Link href="/">
                     <Image
                         className={headerStyles.logo}
-                        src="/logo.png"
+                        src="/commantech_logo_full.png"
                         alt="Commantech Logo"
                         width={150}
                         height={71}
@@ -21,10 +21,10 @@ const Header = () => {
             </div>
             <div className={headerStyles.headerlinks}>
                 <Link href="/">Home</Link>
-                <Link href="/about">About Us</Link>
+                <Link href="/about">About</Link>
                 <Link href="/services">Services</Link>
-                <Link href="/projects">Our Projects</Link>
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/projects">Projects</Link>
+                <Link href="/contact">Contact</Link>
             </div>
         </div>
     </header>

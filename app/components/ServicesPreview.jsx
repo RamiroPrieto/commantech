@@ -11,8 +11,8 @@ const ServiceBox = ({image, text}) => {
                     className={styles.image}
                     src={image}
                     alt={text}
-                    width={300}
-                    height={247}
+                    width={200}
+                    height={165}
                 />
                 <p className={styles.imagebutton}>
                     {text}
@@ -25,12 +25,12 @@ const ServiceBox = ({image, text}) => {
 const ServicesPreview = () => {
   return (
     <div className={styles.grid}>
-        <ServiceBox image="/services_1.png" text="COMPOSITE MANUFACTURING TECHNOLOGY IMPROVEMENT" />
-        <ServiceBox image="/services_2.png" text="POTENTIAL CONSTITUENTS AND TOOLING" />
-        <ServiceBox image="/services_3.png" text="DRAPABILITY AND CONFORMING PREDICTIONS" />
-        <ServiceBox image="/services_4.png" text="PROCESS QUALITY CONTROL MONITORING" />
-        <ServiceBox image="/services_5.png" text="STRUCTURAL INTEGRITY STUDIES" />
-        <ServiceBox image="/services_6.png" text="PROJECT MANAGEMENT" />
+        <ServiceBox image="/services_1.webp" text="COMPOSITE MANUFACTURING TECHNOLOGY IMPROVEMENT" />
+        <ServiceBox image="/services_2.webp" text="POTENTIAL CONSTITUENTS AND TOOLING" />
+        <ServiceBox image="/services_3.webp" text="DRAPABILITY AND CONFORMING PREDICTIONS" />
+        <ServiceBox image="/services_4.webp" text="PROCESS QUALITY CONTROL MONITORING" />
+        <ServiceBox image="/services_5.webp" text="STRUCTURAL INTEGRITY STUDIES" />
+        <ServiceBox image="/services_6.webp" text="PROJECT MANAGEMENT" />
     </div>
   )
 }

@@ -8,14 +8,18 @@
   
   .headercontainer {
     display: flex;
-    padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
   
   .headerlogo {
-    width: 160px;
-    margin-right: 30px;
+    margin-right: 25px;
+    width: auto;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    padding: 5px 20px 5px 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
   
   .headerlinks {
@@ -33,10 +37,36 @@
     justify-content: space-around;
     display: flex;
     height: fit-content;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 800px)  {
+    .headerlinks {
+      display: grid;
+      text-align: center;
+      padding: 5px 17px 5px 5px;
+      grid-template-columns: repeat(2, 105px);
+      gap: 10px 10px;
+      padding-bottom: 10px;
+      width: auto;
+      position: absolute;
+      right: 0px;
+    }
+
+    .headerlogo {
+      /*width: auto;
+      backdrop-filter: blur(3px);
+      padding: 30px;
+      border-radius: 15px;*/
+    }
   }
   
   .headerlinks a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 1.3rem;
+    padding-right: 5px;
+    height: 1.3rem;
+    padding-left: 5px;
+    margin-bottom: 5px;
   }

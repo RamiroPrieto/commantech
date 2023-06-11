@@ -92,10 +92,12 @@ a {
   padding-left: var(--slide-spacing);
   position: relative;
   height: 100vh;
+  max-height: 670px !important;
 }
 .embla__slide__img {
   display: block;
   height: 100vh !important;
+  max-height: 670px !important;
   width: 100vw !important;
   object-fit: cover;
 }
@@ -161,4 +163,27 @@ a {
   border: none;
   padding: 8px;
   border-radius: 5px;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: unset;
+}
+
+@media (max-width: 800px) {
+  .mobile {
+    display: unset;
+  }
+  .desktop {
+    display: none;
+  }
+  .embla__slide {
+    max-height: 1080px !important;
+  }
+  .embla__slide__img {
+    max-height: 1080px !important;
+  }
 }
