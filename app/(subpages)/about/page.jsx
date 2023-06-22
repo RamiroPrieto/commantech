@@ -1,6 +1,11 @@
 import styles from './page.module.css'
 import Image from 'next/image'
 
+export const metadata = {
+    title: 'About COMMANTECH',
+    description: 'About Commantech',
+}
+
 const AboutPage = () => {
   return (
     <div className={styles.splitted}>

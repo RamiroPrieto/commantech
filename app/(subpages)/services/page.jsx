@@ -2,6 +2,11 @@ import Image from 'next/image'
 import '../../globals.css'
 import styles from '../../services.module.css'
 
+export const metadata = {
+  title: 'Services - COMMANTECH',
+  description: 'Our services',
+}
+
 const ServiceTextBox = ({title, image, text}) => {
   return (
       <div className={styles.service}>

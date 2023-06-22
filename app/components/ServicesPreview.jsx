@@ -24,13 +24,16 @@ const ServiceBox = ({image, text}) => {
 
 const ServicesPreview = () => {
   return (
-    <div className={styles.grid}>
-        <ServiceBox image="/services_1.webp" text="COMPOSITE MANUFACTURING TECHNOLOGY IMPROVEMENT" />
-        <ServiceBox image="/services_2.webp" text="POTENTIAL CONSTITUENTS AND TOOLING" />
-        <ServiceBox image="/services_3.webp" text="DRAPABILITY AND CONFORMING PREDICTIONS" />
-        <ServiceBox image="/services_4.webp" text="PROCESS QUALITY CONTROL MONITORING" />
-        <ServiceBox image="/services_5.webp" text="STRUCTURAL INTEGRITY STUDIES" />
-        <ServiceBox image="/services_6.webp" text="PROJECT MANAGEMENT" />
+    <div className={styles.services}>
+        <h2 className={styles.title}>Our Services</h2>
+        <div className={styles.grid}>
+            <ServiceBox image="/services_1.webp" text="COMPOSITE MANUFACTURING TECHNOLOGY IMPROVEMENT" />
+            <ServiceBox image="/services_2.webp" text="POTENTIAL CONSTITUENTS AND TOOLING" />
+            <ServiceBox image="/services_3.webp" text="DRAPABILITY AND CONFORMING PREDICTIONS" />
+            <ServiceBox image="/services_4.webp" text="PROCESS QUALITY CONTROL MONITORING" />
+            <ServiceBox image="/services_5.webp" text="STRUCTURAL INTEGRITY STUDIES" />
+            <ServiceBox image="/services_6.webp" text="PROJECT MANAGEMENT" />
+        </div>
     </div>
   )
 }

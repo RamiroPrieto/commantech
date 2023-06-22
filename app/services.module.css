@@ -31,7 +31,6 @@
   .grid {
     grid-template-columns: repeat(2, 200px);
     gap: 50px 30px;
-    height: 100vh;
     max-height: 900px;
   }
 }
@@ -40,7 +39,6 @@
   .grid {
     grid-template-columns: repeat(3, 200px);
     gap: 50px 30px;
-    height: 100vh;
     max-height: 524px;
   }
 }
@@ -69,6 +67,13 @@
   margin-right: 15px;
 }
 
+@media (max-width: 890px) {
+  .service img {
+    float: none;
+    margin-right: 0px;
+  }
+}
+
 .linkcontainer {
   transition: transform 500ms;
 }
@@ -79,4 +84,13 @@
 
 .linkcontainer:hover .imagebutton {
   background-color: #a98161d6;
+}
+
+.services {
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: var(--color-main);
 }

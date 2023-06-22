@@ -1,0 +1,76 @@
+ .splitted {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 100%;
+    min-height: calc(100vh - 115px - 150px);
+ }
+
+ .splitted div {
+    padding: 10px;
+ }
+
+
+ .leftPanel {
+    width: 60%;
+ }
+
+ .leftPanel>p {
+    font-size: 16px;
+ }
+
+ .rightPanel {
+    width: 40%;
+    min-width: 300px;
+ }
+
+ .contact_panel {
+    padding: 10px;
+    width: 320px;
+    background: var(--color-main);
+    color: white;
+ }
+
+ .contact_panel p {
+    padding-top: 5px;
+ }
+
+ .link {
+    color: white;
+    text-decoration: underline;
+ }
+
+ @media (max-width: 800px) {
+    .leftPanel {
+       width: 100%;
+    }
+
+    .rightPanel {
+       width: 100%;
+    }
+ }
+
+ .formInput {
+      resize: none;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    background-color: white;
+    background-clip: padding-box;
+    border: 1px solid #dee2e6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-top: 11px;
+ }
+
+ .formLabel {
+   margin-bottom: .5rem;
+ }

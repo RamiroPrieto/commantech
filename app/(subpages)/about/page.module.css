@@ -18,6 +18,7 @@
     padding: 10px;
  }
 
+
  .leftPanel {
     width: 60%;
  }
@@ -34,6 +35,10 @@
  .founder {
     float: left;
     margin-right: 15px;
+    width: calc(100% - 145px);
+    height: calc(100% - 145px);
+    max-width: 170px;
+    max-height: 170px;
  }
 
  .aboutBox {
@@ -49,5 +54,17 @@
  }
 
  .aboutBox p {
-    text-align: justify;
+    text-align: inherit;
+ }
+
+ @media (max-width: 800px) {
+   .leftPanel {
+      width: 100%;
+   }
+   .rightPanel {
+      width: 100%;
+   }
+   .aboutBox p {
+      text-align: justify;
+   }
  }

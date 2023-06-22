@@ -8,3 +8,12 @@
 .clients > img {
   margin: 10px;
 }
+
+.title {
+  text-align: center;
+  color: var(--color-main);
+}
+
+.clientstitle {
+  padding: 20px;
+}

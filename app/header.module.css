@@ -1,7 +1,8 @@
 
 
 .header {
-    position: absolute;
+    position: fixed;
+    top: 0px;
     z-index: 100;
     width: 100vw;
   }
@@ -20,6 +21,7 @@
     padding: 5px 20px 5px 20px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    height: 85px;
   }
   
   .headerlinks {
@@ -45,12 +47,13 @@
       display: grid;
       text-align: center;
       padding: 5px 17px 5px 5px;
-      grid-template-columns: repeat(2, 105px);
+      grid-template-columns: repeat(3, 105px);
       gap: 10px 10px;
-      padding-bottom: 10px;
       width: auto;
       position: absolute;
       right: 0px;
+      align-content: center;
+      height: 85px;
     }
 
     .headerlogo {

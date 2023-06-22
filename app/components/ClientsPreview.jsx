@@ -4,8 +4,8 @@ import styles from '../clients.module.css'
 
 const ClientsPreview = () => {
   return (
-    <div>
-        <h2>Our Clients</h2>
+    <div className={styles.clientstitle}>
+        <h2 className={styles.title}>Our Clients</h2>
         <div className={styles.clients}>
             <Image src="/clients-1.png" alt="a" height={70} width={70}/>
             <Image src="/clients-2.svg" alt="vismara" height={70} width={70}/>
