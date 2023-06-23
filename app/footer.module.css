@@ -26,3 +26,10 @@
   .footercontainer > p {
     width: 333px;
   }
+
+  @media (max-width: 800px) {
+    .footerlogo {
+      display: none;
+    }
+  }
+  
