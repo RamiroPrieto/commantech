@@ -67,7 +67,7 @@
     }
   }
 
-  @media (max-width: 530px)  {
+  @media (min-width: 420px) and (max-width: 530px)  {
     .headerlinks {
       display: grid;
       text-align: center;
@@ -80,12 +80,20 @@
       align-content: center;
       height: auto;
     }
+  }
 
-    .headerlogo {
-      /*width: auto;
-      backdrop-filter: blur(3px);
-      padding: 30px;
-      border-radius: 15px;*/
+  @media (max-width: 420px)  {
+    .headerlinks {
+      display: grid;
+      text-align: center;
+      padding: 5px 17px 5px 5px;
+      grid-template-columns: repeat(1, 90px);
+      gap: 10px 10px;
+      width: auto;
+      position: absolute;
+      right: 0px;
+      align-content: center;
+      height: auto;
     }
   }
   

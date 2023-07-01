@@ -4,6 +4,7 @@ import '../globals.css'
 import footerStyles from '../footer.module.css'
 import { HiLocationMarker } from 'react-icons/hi';
 import { GrMail } from 'react-icons/gr';
+import { AiFillPhone } from 'react-icons/ai';
 
 const Footer = () => {
   return (
@@ -11,6 +12,8 @@ const Footer = () => {
         <div className={footerStyles.footercontainer}>
             <p className={footerStyles.address}>
                 <HiLocationMarker/> Address: <Link href={process.env.location} className="link">Via di Salicchi, 361 1P, 55100 Lucca LU, Italia</Link>
+                <br/>
+                <AiFillPhone/> Phone: <span className="link">(39) 331 3542388</span>
                 <br/>
                 <GrMail/> Email: <Link href="mailto:info@commantech.it" className="link">info@commantech.it</Link>
             </p>

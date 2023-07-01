@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useState } from 'react';
 import { HiLocationMarker } from 'react-icons/hi';
 import { GrMail } from 'react-icons/gr';
+import { AiFillPhone } from 'react-icons/ai';
 
 export const metadata = {
   title: "Contact COMMANTECH",
@@ -98,6 +99,9 @@ const ContactPage = () => {
           </Link>
           <p>
             <HiLocationMarker/> Address: <Link href={process.env.location} className={styles.link}>Via di Salicchi, 361 1P, 55100 Lucca LU, Italia</Link>
+          </p>
+          <p>
+            <AiFillPhone/> Phone: <span className={styles.link}>(39) 331 3542388</span>
           </p>
           <p>
             <GrMail/> Email: <Link href="mailto:info@commantech.it" className={styles.link}>info@commantech.it</Link>

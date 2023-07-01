@@ -11,6 +11,8 @@ const ClientsPreview = () => {
             <Image src="/clients-2.svg" alt="vismara" height={70} width={70}/>
             <Image src="/clients-3.png" alt="ginogandino" height={70} width={176}/>
             <Image src="/clients-4.png" alt="cuarentagradossur" height={70} width={280}/>
+            <Image src="/clients-6.jpg" alt="cryachts" height={70} width={176}/>
+            <Image src="/clients-5.png" alt="bryd" height={30} width={220}/>
         </div>
     </div>
   )

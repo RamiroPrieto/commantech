@@ -7,7 +7,8 @@
 }
 
 .projectbox {
-  width: 440px;
+  width: calc(100% - 20px);
+  max-width: 440px;
   text-align: justify;
   padding: 20px;
   margin: 20px;
@@ -43,6 +44,11 @@
 
 .projectbox > img {
   border: 2px solid var(--color-main);
+  width: 100%;
+  display: block;
+  max-width: 400px;
+  max-height: 200px;
+  height: auto;
 }
 
 .grid {
@@ -63,6 +69,10 @@
   height: 100%;
 }
 
+.page > ul {
+  width: 100%;
+}
+
 @media (max-width: 800px) {
   .page img {
     margin-bottom: 20px;
@@ -71,11 +81,24 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 66vw;
   }
   .projectbox_full_right {
     padding: 20px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    width: 66vw;
+    margin-left: 33vw;
+  }
+
+  .projectbox_full_left > img {
+    width: calc(66vw - 28px);
+    height: auto;
+  }
+
+  .projectbox_full_right > img {
+    width: calc(66vw - 28px);
+    height: auto;
   }
 }

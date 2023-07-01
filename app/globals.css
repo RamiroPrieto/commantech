@@ -51,6 +51,10 @@ body {
   overflow-x: hidden;
 }
 
+body > main {
+  width: 100vw;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -138,8 +142,8 @@ a {
 
 .embla__slide__text {
   position: absolute;
-  bottom: 270px;
-  left: 50px;
+  top: 55vh;
+  left: 10px;
   color: white;
   width: 360px;
   font-size: xx-large;
