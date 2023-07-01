@@ -101,7 +101,7 @@ const ContactPage = () => {
             <HiLocationMarker/> Address: <Link href={process.env.location} className={styles.link}>Via di Salicchi, 361 1P, 55100 Lucca LU, Italia</Link>
           </p>
           <p>
-            <AiFillPhone/> Phone: <span className={styles.link}>(39) 331 3542388</span>
+            <AiFillPhone/> Phone: <Link href="tel:+393313542388" className={styles.link}>(39) 331 3542388</Link>
           </p>
           <p>
             <GrMail/> Email: <Link href="mailto:info@commantech.it" className={styles.link}>info@commantech.it</Link>
