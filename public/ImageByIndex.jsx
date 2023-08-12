@@ -1,6 +1,6 @@
-import image1 from './carousel_1.webp'
+import image3 from './carousel_1.webp'
 import image2 from './carousel_2.jpg'
-import image3 from './carousel_3.jpg'
+import image1 from './mobile_start_video_wide.gif'
 import image4 from './carousel_4.jpg'
 
 //import image1_mob from './carousel_1_mobile.jpg'
