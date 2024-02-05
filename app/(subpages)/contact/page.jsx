@@ -42,35 +42,41 @@ const ContactPage = () => {
 
   return (
     <div className="container contact">
+      {/* <Image src="/Looper-3.png"
+        width={500}
+        height={500}
+        className="contact__looper"
+        >
+        </Image> */}
       <div className="contact__left">
-        <div>
+        <div className="contact__left-getin">
           Get in touch
         </div>
-        <div>
-           Let’s work - together!
+        <div className="contact__left-title">
+           Let’s work - <br></br> together!
         </div>
         <div className="contact__left-information">
             <div>
-               <div>
+               <div className="contact__left-subtitle">
                   ADDRESS
                </div>
-               <div>
-                Via di Salicchi, 361 1P, 55100 Lucca LU, Italia
+               <div className="contact__left-info">
+                Via di Salicchi, 361 1P,<br></br> 55100 Lucca LU, Italia
                </div>
             </div>
             <div>
-               <div>
+               <div className="contact__left-subtitle">
                PHONE
                </div>
-               <div>
+               <div className="contact__left-info">
                (39) 331 3542388
                </div>
             </div>
             <div>
-               <div>
+               <div className="contact__left-subtitle">
                EMAIL
                </div>
-               <div>
+               <div className="contact__left-info">
                info@commantech.it
                </div>
             </div>
@@ -83,7 +89,7 @@ const ContactPage = () => {
             <div>
               <input
                 type="name" value={name}
-                className={styles.formInput}
+                className="form__input"
                 name="name" onChange={e => setName(e.target.value)}
                 id="exampleFormControlInput1"
                 placeholder="First Name"
@@ -92,8 +98,8 @@ const ContactPage = () => {
             </div>
             <div>
               <input
-                type="name" value={lastName}
-                className={styles.formInput}
+                type="lastName" value={lastName}
+                className="form__input"
                 name="name" onChange={e => setLastName(e.target.value)}
                 id="exampleFormControlInput1"
                 placeholder="Last Name"
@@ -103,7 +109,7 @@ const ContactPage = () => {
             <div>
               <input
                 type="email" value={email}
-                className={styles.formInput}
+                className="form__input"
                 name="email" required={true}
                 onChange={e => setEmail(e.target.value)}
                 id="exampleFormControlInput2"
@@ -113,7 +119,7 @@ const ContactPage = () => {
             <div >
               <input
                 type="text"
-                className={styles.formInput}
+                className="form__input"
                 name="subject" value={subject}
                 id="exampleFormControlTextarea1"
                 placeholder="Subject"
@@ -123,10 +129,10 @@ const ContactPage = () => {
             </div>
             <div >
               <textarea
-                className={styles.formInput}
-                name="subject" value={message}
+                className="form__input"
+                name="message" value={message}
                 id="exampleFormControlTextarea1"
-                rows="3" onChange={e => setSubject(e.target.value)}
+                rows="3" onChange={e => setMessage(e.target.value)}
                 placeholder="Message"
                 required={true}
               ></textarea>
@@ -134,11 +140,9 @@ const ContactPage = () => {
             <div className="form__text">
                 By submitting this form, you consent to share your personal information with us to service your request and for communication purposes. We do not sell your data to third parties. 
             </div>
-            <div className="button">
-              <button type="submit">
-                Send Message
-              </button>
-            </div>
+            <button className="form__button" type="submit">
+              Send Message
+            </button>
           </form>
           
         </div>

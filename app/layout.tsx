@@ -2,6 +2,8 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Image from "next/image";
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Image src="/Looper-3.png"
+        alt="looper"
+        width={500}
+        height={500}
+        className="looper__top"
+        >
+        </Image>
         <Header/>
         <main>
           {children}

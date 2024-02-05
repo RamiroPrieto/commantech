@@ -8,38 +8,70 @@ import { AiFillPhone } from 'react-icons/ai';
 
 const Footer = () => {
   return (
-    <footer className={footerStyles.footer}>
-        <div className={footerStyles.footercontainer}>
-            <p className={footerStyles.address}>
-                <HiLocationMarker/> Address: <Link href={process.env.location} target="_blank" className="link">Via di Salicchi, 361 1P, 55100 Lucca LU, Italia</Link>
-                <br/>
-                <AiFillPhone/> Phone: <Link href="tel:+393313542388" target="_blank" className="link">(39) 331 3542388</Link>
-                <br/>
-                <GrMail/> Email: <Link href="mailto:info@commantech.it" target="_blank" className="link">info@commantech.it</Link>
-            </p>
-            <div className={footerStyles.footerlogo}>
+    <footer className="footer">
+        <div className="container footer__container">
+            <div className="footer__logo">
                 <Link href="/">
                     <Image
-                        className={footerStyles.logo}
-                        src="/logo.webp"
+                        className=""
+                        src="/logo.png"
                         alt="Commantech Logo"
-                        width={150}
-                        height={71}
+                        width={207}
+                        height={101}
                         priority
                     />
                 </Link>
             </div>
-            <div className={footerStyles.contactUs}>
-                <p>Helping the marine industry to improve composites manufacturing processes...</p>
-                <br/>
-                <Link href="/contact" className="button">
-                    <button >Contact Us</button>
-                </Link>
+            <div className='footer__right'>
+                <div className='footer__right-container'>
+                    <div className='footer__right-item'>
+                        <Image
+                            className=""
+                            src="/Location.svg"
+                            alt="Location"
+                            width={20}
+                            height={20}
+                        />
+                        <div className='footer__right-info'>
+                        <Link href={process.env.location} target="_blank">Via di Salicchi, 361 1P, 55100 Lucca LU, Italia</Link>
+                        </div>
+                    </div>
+                    <div className='footer__right-linea'>|</div>
+                    <div className='footer__right-item'>
+                        <Image
+                            className=""
+                            src="/Phone.svg"
+                            alt="Phone"
+                            width={20}
+                            height={20}
+                        />
+                        <div className='footer__right-info'>
+                        <Link href="tel:+393313542388" target="_blank">(39) 331 3542388</Link>
+                        </div>
+                    </div>
+                    <div className='footer__right-linea'>|</div>
+                    <div className='footer__right-item'>
+                        <Image
+                            className=""
+                            src="/Email.svg"
+                            alt="Mail"
+                            width={20}
+                            height={20}
+                        />
+                        <div className='footer__right-info'>
+                        <Link href="mailto:info@commantech.it" target="_blank">info@commantech.it</Link>
+                        </div>
+                    </div>
+                </div>
+                <div className='footer__right-vat'>
+                    COMMANTECH S.R.L.S  ·  VAT NUMBER: IT02687920468
+                </div>
+                <div className='footer__right-rights'>
+                    © 2023 Commantech. All Rights Reserved.
+                </div>
             </div>
         </div>
-        <div className={footerStyles.reserved}>
-            All Rights Reserved. 2023
-        </div>
+        
     </footer>
   )
 }
