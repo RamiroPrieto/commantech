@@ -5,16 +5,16 @@ import styles from '../services.module.css'
 
 const ServiceBox = ({image, text}) => {
     return (
-        <div className={styles.linkcontainer}>
+        <div className="serviceBox">
             <Link href="/services">
                 <Image
                     className={styles.image}
                     src={image}
                     alt={text}
-                    width={200}
-                    height={165}
+                    width={30}
+                    height={30}
                 />
-                <p className={styles.imagebutton}>
+                <p className="serviceBox__text">
                     {text}
                 </p>
             </Link>
@@ -25,14 +25,21 @@ const ServiceBox = ({image, text}) => {
 const ServicesPreview = () => {
   return (
     <div className={styles.services}>
-        <h2 className={styles.title}>Our Services</h2>
-        <div className={styles.grid}>
-            <ServiceBox image="/services_1.webp" text="COMPOSITE MANUFACTURING TECHNOLOGY IMPROVEMENT" />
-            <ServiceBox image="/services_2.webp" text="POTENTIAL CONSTITUENTS AND TOOLING" />
-            <ServiceBox image="/services_3.webp" text="DRAPABILITY AND CONFORMING PREDICTIONS" />
-            <ServiceBox image="/services_4.webp" text="PROCESS QUALITY CONTROL MONITORING" />
-            <ServiceBox image="/services_5.webp" text="STRUCTURAL INTEGRITY STUDIES" />
-            <ServiceBox image="/services_6.webp" text="PROJECT MANAGEMENT" />
+        <div className='container services'>
+            <div className='services__top'>
+                <h2 className="services__top-title">Find the services - <b> that best suits your needs</b></h2>
+                <p className='services__top-subtitle'>The use of new renewable composite materials helps to counterbalance the extensive use of petroleum-based polymers used today. Hence, the industry is investing too much effort on applying them in their products.</p>
+            </div>
+            <div className="services__grid">
+                <ServiceBox image="/fibra1.png" text="Composite manufacturing technology improvement" />
+                <ServiceBox image="/incrementar1.png" text="Potencial constituents and tooling" />
+                <div>Imagen</div>
+                <ServiceBox image="/obrero1.png" text="Drapability and conforming predictions" />
+                <ServiceBox image="/iso-9001.png" text="Process quality control monitoring" />
+                <ServiceBox image="/incrementar2.png" text="Structural integrity studies" />
+                <ServiceBox image="/obrero.png" text="Project management" />
+                <div>Learn more about Our Services</div>
+            </div>
         </div>
     </div>
   )

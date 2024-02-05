@@ -24,9 +24,12 @@ const ContactPage = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [message, setMessage] = useState("");
+
     const onSubmit = async (e) => {
         e.preventDefault()
-        const response = await saveFormData({ email, subject, name });
+        const response = await saveFormData({ email, subject, name , lastName , message });
         if (response.status === 200) {
           alert("Your email was sent successfully");
           setEmail("");
@@ -38,56 +41,109 @@ const ContactPage = () => {
     }
 
   return (
-    <div className={styles.splitted}>
-      <div className={styles.leftPanel}>
-        <h3>Get in touch</h3>
-        <form onSubmit={onSubmit}>
-          <div>
-            <label htmlFor="exampleFormControlInput1" className={styles.formLabel}>
-              Name
-            </label>
-            <input
-              type="name" value={name}
-              className={styles.formInput}
-              name="name" onChange={e => setName(e.target.value)}
-              id="exampleFormControlInput1"
-              placeholder="full name"
-              required={true}
-            />
-          </div>
-          <div>
-            <label htmlFor="exampleFormControlInput2" className={styles.formLabel}>
-              Email address
-            </label>
-            <input
-              type="email" value={email}
-              className={styles.formInput}
-              name="email" required={true}
-              onChange={e => setEmail(e.target.value)}
-              id="exampleFormControlInput2"
-              placeholder="name@example.com"
-            />
-          </div>
-          <div >
-            <label htmlFor="exampleFormControlTextarea1" className={styles.formLabel}>
-              Subject
-            </label>
-            <textarea
-              className={styles.formInput}
-              name="subject" value={subject}
-              id="exampleFormControlTextarea1"
-              rows="3" onChange={e => setSubject(e.target.value)}
-              required={true}
-            ></textarea>
-          </div>
-          <div className="button">
-            <button type="submit">
-              Submit form
-            </button>
-          </div>
-        </form>
+    <div className="container contact">
+      <div className="contact__left">
+        <div>
+          Get in touch
+        </div>
+        <div>
+           Let’s work - together!
+        </div>
+        <div className="contact__left-information">
+            <div>
+               <div>
+                  ADDRESS
+               </div>
+               <div>
+                Via di Salicchi, 361 1P, 55100 Lucca LU, Italia
+               </div>
+            </div>
+            <div>
+               <div>
+               PHONE
+               </div>
+               <div>
+               (39) 331 3542388
+               </div>
+            </div>
+            <div>
+               <div>
+               EMAIL
+               </div>
+               <div>
+               info@commantech.it
+               </div>
+            </div>
+        </div>
       </div>
-      <div className={styles.rightPanel}>
+      <div className="contact__right">
+        <div className="form__container">
+          <h3 className="form__title">Contact Form</h3>
+          <form onSubmit={onSubmit}>
+            <div>
+              <input
+                type="name" value={name}
+                className={styles.formInput}
+                name="name" onChange={e => setName(e.target.value)}
+                id="exampleFormControlInput1"
+                placeholder="First Name"
+                required={true}
+              />
+            </div>
+            <div>
+              <input
+                type="name" value={lastName}
+                className={styles.formInput}
+                name="name" onChange={e => setLastName(e.target.value)}
+                id="exampleFormControlInput1"
+                placeholder="Last Name"
+                required={true}
+              />
+            </div>
+            <div>
+              <input
+                type="email" value={email}
+                className={styles.formInput}
+                name="email" required={true}
+                onChange={e => setEmail(e.target.value)}
+                id="exampleFormControlInput2"
+                placeholder="Email address"
+              />
+            </div>
+            <div >
+              <input
+                type="text"
+                className={styles.formInput}
+                name="subject" value={subject}
+                id="exampleFormControlTextarea1"
+                placeholder="Subject"
+                rows="3" onChange={e => setSubject(e.target.value)}
+                required={true}
+              />
+            </div>
+            <div >
+              <textarea
+                className={styles.formInput}
+                name="subject" value={message}
+                id="exampleFormControlTextarea1"
+                rows="3" onChange={e => setSubject(e.target.value)}
+                placeholder="Message"
+                required={true}
+              ></textarea>
+            </div>
+            <div className="form__text">
+                By submitting this form, you consent to share your personal information with us to service your request and for communication purposes. We do not sell your data to third parties. 
+            </div>
+            <div className="button">
+              <button type="submit">
+                Send Message
+              </button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+      {/* <div className={styles.rightPanel}>
         <div className={styles.contact_panel}>
           <Link href={process.env.location}>
             <Image
@@ -98,16 +154,16 @@ const ContactPage = () => {
             />
           </Link>
           <p>
-            <HiLocationMarker/> Address: <Link href={process.env.location} className={styles.link}>Via di Salicchi, 361 1P, 55100 Lucca LU, Italia</Link>
+            <HiLocationMarker/> Address: <Link href={process.env.location} target="_blank" className={styles.link}>Via di Salicchi, 361 1P, 55100 Lucca LU, Italia</Link>
           </p>
           <p>
-            <AiFillPhone/> Phone: <Link href="tel:+393313542388" className={styles.link}>(39) 331 3542388</Link>
+            <AiFillPhone/> Phone: <Link href="tel:+393313542388" target="_blank" className={styles.link}>(39) 331 3542388</Link>
           </p>
           <p>
-            <GrMail/> Email: <Link href="mailto:info@commantech.it" className={styles.link}>info@commantech.it</Link>
+            <GrMail/> Email: <Link href="mailto:info@commantech.it" target="_blank" className={styles.link}>info@commantech.it</Link>
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

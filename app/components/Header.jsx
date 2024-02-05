@@ -5,26 +5,23 @@ import headerStyles from '../header.module.css'
 
 const Header = () => {
   return (
-    <header className={headerStyles.header}>
-        <div className={headerStyles.headercontainer}>
-            <div className={headerStyles.headerlogo}>
-                <Link href="/">
-                    <Image
-                        className={headerStyles.logo}
-                        src="/commantech_logo_full.png"
-                        alt="Commantech Logo"
-                        width={150}
-                        height={71}
-                        priority
-                    />
+    <header className="header">
+        <div className="header__container container">
+            <div className="header__logo">
+                <Link href="/" className='header__titulo'>
+                    <div>
+                        COMMANTECH
+                    </div>
+                    <div className='header__titulo-srls'>
+                        SRLS
+                    </div>
                 </Link>
             </div>
-            <div className={headerStyles.headerlinks}>
-                <Link href="/">Home</Link>
+            <div className="navBar">
                 <Link href="/about">About</Link>
                 <Link href="/services">Services</Link>
                 <Link href="/projects">Projects</Link>
-                <Link href="/contact">Contact</Link>
+                <Link href="/contact" className='navBar__contact'>Contact</Link>
             </div>
         </div>
     </header>

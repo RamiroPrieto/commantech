@@ -11,11 +11,11 @@ const Footer = () => {
     <footer className={footerStyles.footer}>
         <div className={footerStyles.footercontainer}>
             <p className={footerStyles.address}>
-                <HiLocationMarker/> Address: <Link href={process.env.location} className="link">Via di Salicchi, 361 1P, 55100 Lucca LU, Italia</Link>
+                <HiLocationMarker/> Address: <Link href={process.env.location} target="_blank" className="link">Via di Salicchi, 361 1P, 55100 Lucca LU, Italia</Link>
                 <br/>
-                <AiFillPhone/> Phone: <Link href="tel:+393313542388" className="link">(39) 331 3542388</Link>
+                <AiFillPhone/> Phone: <Link href="tel:+393313542388" target="_blank" className="link">(39) 331 3542388</Link>
                 <br/>
-                <GrMail/> Email: <Link href="mailto:info@commantech.it" className="link">info@commantech.it</Link>
+                <GrMail/> Email: <Link href="mailto:info@commantech.it" target="_blank" className="link">info@commantech.it</Link>
             </p>
             <div className={footerStyles.footerlogo}>
                 <Link href="/">

@@ -43,9 +43,9 @@ const EmblaCarousel = ({ slides, options = { loop: false } }) => {
                     ))}
                 </div>
             </div>
-            <div className="embla__slide__text">
+            {/* <div className="embla__slide__text">
                 <span>Linking Bio-based trending composites with your shipyard</span>
-            </div>
+            </div> */}
         </div>
     )
 }
