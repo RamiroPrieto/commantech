@@ -16,8 +16,8 @@ export default function Home() {
     <>
       <PageTitle></PageTitle>
       <EmblaCarousel slides={SLIDES} options={OPTIONS} />
-      <ServicesPreview/>
       <ProjectsPreview/>
+      <ServicesPreview/>
       <ClientsPreview/>
     </>
   )
