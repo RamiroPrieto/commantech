@@ -8,8 +8,123 @@ export const metadata = {
 
 const AboutPage = () => {
   return (
-    <div className={styles.splitted}>
-        <div className={styles.leftPanel}>
+    <div className="about container">
+        <h2 className='about__title'>Let’s get to - know each other </h2>
+        <div className='about__intro'>
+            The use of new renewable composite materials helps to counterbalance the extensive use of petroleum-based 
+            polymers used today. Hence, the industry is investing too much effort on applying them in 
+            their products.
+        </div>
+        <div className='about__founder'>
+            <div className='about__founder-container'>
+                <Image
+                    className='about__ornament'
+                    src="/ornament.png"
+                    alt="ornament"
+                    width={166}
+                    height={224}
+                    
+                />
+                <Image
+                    className="about__founder-img"
+                    src="/francoFace.png"
+                    alt="Franco Armanasco"
+                    width={170}
+                    height={170}
+                    priority
+                />
+            </div>
+            <div className='about__founder-info'>
+                <div className='about__founder-subtitle'>About the founder</div>
+                <div className='about__founder-name'>Franco Armanasco</div>
+                <div className='about__founder-text'>
+                    Franco was born in Argentina. He has obtained a Degree in Marine Engineering in Buenos Aires. 
+                    After graduating, he began his career working as a structural composite designer for the sailing 
+                    and motor yacht industry, participating in the development of sailing yachts from 30 ft to 100 ft 
+                    constructed in Italy and Argentina. His passion in yacht building has motivated him to get more 
+                    involved into composites manufacturing technologies. In 2019 he obtained a Master’s degree in 
+                    composites engineering with a project thesis based on rheo-kinetics studies of novel bio-based 
+                    polyurethane resins. He has developed manufacturing improvements of yacht buildings in Argentina,
+                    applying specific software and finding out the best products available in the market. 
+                    In 2020 he started a PhD in engineering with a deep research and development in flax/soy-based 
+                    polyurethane prepregs and its application in ATL/AFP manufacturing technologies. In the meantime, 
+                    he has been collaborating with a Canadian research center dedicating his time in developing novel 
+                    bio-sourced composite materials.
+                </div>
+                <div className='about__founder-degrees'>
+                    <div className='about__founder-degreesItem'>
+                        <Image
+                            src="/degree1.svg"
+                            alt="University Degree
+                            Marine Engineering"
+                            width={47}
+                            height={47}
+                            
+                        />
+                        <div>
+                            University Degree Marine Engineering
+                        </div>
+                    </div>
+                    <div className='about__founder-degreesItem'>
+                        <Image
+                            src="/degree2.svg"
+                            alt="Master’s Degree
+                            Composites Engineering"
+                            width={47}
+                            height={47}
+                            
+                        />
+                        <div>
+                        Master’s Degree Composites Engineering
+                        </div>
+                    </div>
+                    <div className='about__founder-degreesItem'>
+                        <Image
+                            src="/title1.svg"
+                            alt="Doctor of Philosophy
+                            Bio Composites"
+                            width={47}
+                            height={47}
+                            
+                        />
+                        <div>
+                            University Degree Marine Engineering
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className='about__gallery'>
+            <Image
+                className='about__gallery-img'
+                src="/about1.png"
+                alt="about1"
+                width={47}
+                height={47}
+            />
+            <Image
+                className='about__gallery-img'
+                src="/about2.png"
+                alt="about2"
+                width={47}
+                height={47}
+            />
+            <Image
+                className='about__gallery-img'
+                src="/about3.png"
+                alt="about3"
+                width={47}
+                height={47}
+            />
+        </div>
+        <div className='about__offer'>
+            <div className='about__offer-title'>COMMANTECH - can offer this by</div>
+            <div className='about__offer-text'>Having a strong technical background supporting it with the collaboration of a vast community of researchers and experienced engineers in the composite materials sector;</div>
+            <div className='about__offer-text'>Having a deep understanding of the composites industry, including current trends, market dynamics, and regulatory requirements;</div>
+            <div className='about__offer-text'>Solving complex technical problems related to composite materials and manufacturing processes by a combination of analytical thinking, creativity and practical experience;</div>
+            <div className='about__offer-text'>Communicating technical concepts and solutions clearly and effectively to clients with varying levels of technical expertise. Also working collaboratively with clients to develop solutions that meet their specific needs.</div>
+        </div>
+        {/* <div className="">
             <h2>COMMANTECH</h2>
             <br/>
             <p>The use of new renewable composite materials helps to counterbalance the extensive use of petroleum-based polymers used today. Hence, the industry is investing too much effort on applying them in their products.</p>
@@ -39,7 +154,7 @@ const AboutPage = () => {
                     <strong>Franco Armanasco</strong>, founder of <strong>COMMANTECH</strong>, was born in Argentina. He has obtained a Degree in Marine Engineering in Buenos Aires. After graduating, he began his career working as a structural composite designer for the sailing and motor yacht industry, participating in the development of sailing yachts from 30 ft to 100 ft constructed in Italy and Argentina. His passion in yacht building has motivated him to get more involved into composites manufacturing technologies. In 2019 he obtained a Master’s degree in composites engineering with a project thesis based on rheo-kinetics studies of novel bio-based polyurethane resins. He has developed manufacturing improvements of yacht buildings in Argentina, applying specific software and finding out the best products available in the market. In 2020 he started a PhD in engineering with a deep research and development in flax/soy-based polyurethane prepregs and its application in ATL/AFP manufacturing technologies. In the meantime, he has been collaborating with a Canadian research center dedicating his time in developing novel bio-sourced composite materials. 
                 </p>
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }
