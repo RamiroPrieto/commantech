@@ -66,6 +66,9 @@ const Footer = () => {
                 <div className='footer__right-vat'>
                     COMMANTECH S.R.L.S  ·  VAT NUMBER: IT02687920468
                 </div>
+                <div className='footer__right-vat'>
+                    Capitale Sociale: €1000,00
+                </div>
                 <div className='footer__right-rights'>
                     © 2023 Commantech. All Rights Reserved.
                 </div>
