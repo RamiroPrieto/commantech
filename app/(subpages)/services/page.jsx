@@ -11,13 +11,15 @@ const ServiceTextBox = ({title, image, text}) => {
   return (
       <div className="servicesI__item">
         <div className='servicesI__image'>
-          <Image
-            className="servicesI__image-img"
-            src={image}
-            alt={text}
-            width={46}
-            height={46}
-          />
+          <div className='servicesI__card'>
+            <Image
+              className="servicesI__image-img"
+              src={image}
+              alt={text}
+              width={46}
+              height={46}
+            />
+          </div>
         </div>
         <h3 className='servicesI__subtitle'>
           {title}

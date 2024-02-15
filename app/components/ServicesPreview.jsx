@@ -63,10 +63,10 @@ const ServicesPreview = () => {
                     </div>
                     <Image
                         className="services__learnMore-looper"
-                        src="./LooperServices.png"
+                        src="./LooperGroupCut.png"
                         alt="looper"
-                        width={100}
-                        height={100}
+                        width={50}
+                        height={50}
                     />
                 </Link>
                     
