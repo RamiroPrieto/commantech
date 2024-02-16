@@ -1,10 +1,13 @@
+"use client";
 import Link from 'next/link'
 import Image from 'next/image'
 import '../globals.css'
 import headerStyles from '../header.module.css'
 import MobileMenu from "./MobileMenu"
 
+
 const Header = () => {
+
   return (
     <header className="header">
         <div className="header__container container">

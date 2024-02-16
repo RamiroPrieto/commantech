@@ -116,6 +116,18 @@ a {
   --slide-size: 100%;
   --slide-height: 19rem;
 }
+
+.embla__container{
+  position: relative;
+
+}
+
+.embla__arrow{
+  position: absolute;
+  z-index: 1;
+  top: -35px;
+}
+
 .embla__viewport {
   overflow: hidden;
 }

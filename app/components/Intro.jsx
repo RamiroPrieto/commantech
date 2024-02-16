@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Intro = () => {
   return (
-    <div className='looperContainer'>
+    <div className='looperContainer' id='section'>
         <Image className='intro__looper' src="Maskgroup.png" alt="looperIntro" height={400} width={300}/>
       <div className='intro container'>
 
