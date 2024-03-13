@@ -70,7 +70,7 @@ const Footer = () => {
                     Capitale Sociale: €1000,00
                 </div>
                 <div className='footer__right-rights'>
-                    © 2023 Commantech. All Rights Reserved.
+                    © 2024 Commantech. All Rights Reserved.
                 </div>
             </div>
         </div>

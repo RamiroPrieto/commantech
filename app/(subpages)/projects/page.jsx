@@ -6,7 +6,7 @@ export const metadata = {
   description: 'Our projects',
 }
 
-const Project = ({ src, text, title }) => {
+const Project = ({ src, text, title, download }) => {
   return (
     <div className="projects__right-item">
       <div className="projects__right-title">
@@ -15,18 +15,20 @@ const Project = ({ src, text, title }) => {
       <div className="projects__right-description">
           {text}
       </div>
-      <a href={src} className="projects__right-download" download>
-        <div>
-          Download Report 
-        </div>
-          <Image
-            className="projects__downloadimg"
-            src="/download.svg"
-            alt="download.svg"
-            width={14}
-            height={15}
-          />
-      </a>
+      <div className={download}>
+        <a href={src} className="projects__right-download" download>
+          <div>
+            Download Report 
+          </div>
+            <Image
+              className="projects__downloadimg"
+              src="/download.svg"
+              alt="download.svg"
+              width={14}
+              height={15}
+            />
+        </a>
+      </div>
     </div>
   );
   
@@ -55,9 +57,9 @@ const ProjectsPage = () => {
           </div>
         </div>
         <div className="projects__right">
-          <Project src="/project-1.png" title="Kinetic and chemorheological modeling of thermosetting polyurethanes obtained from an epoxidized soybean oil polyol crosslinked with glycerin" text="Towards the development of a new matrix system, it is necessary to create cure kinetic and chemorheological models to deeply understand the curing behavior and the viscosity evolution against time of the resin involved in. In this occasion, Franco Armanasco participated on the development of a cure kinetic and chemorheological model of a soybean-based polyurethane system, in which different manufacturing processes can be predicted." />
-          <Project src="/project-2.jpeg" title="Vacuum Infusion Process Layout Design (Antares Catamarans)" text="40 Grados Sur, a yard dedicated to build Antares Catamarans, came to us with the necessity on improving its composite manufacturing process. They used to apply hand-lay up manufacturing processes to build all its composites parts. COMMANTECH helped them start using VARTM (vacuum assisted resin transfer molding), better known as infusion. We designed the infusion layout process and obtained the required supplies to build the hull and the deck, as well as bulkheads and big parts." />
-          <Project src="/project-3.jpg" title="The role of post-cure cycle on the thermomechanical properties of soy-based polyurethane thermosets" text="In continuity on the research and development of the new biobased polyurethane system previously studied, Franco Armanasco participated on the characterization of the system in order to obtain its mechanical behavior by changing constituent in its formulation as well as its post-cure process. The results gave the research a boost to jump to a next step towards the development of new biobased resin systems." />
+          <Project src="/Kinetic-and-chemorheological-modeling-of-thermosetting.pdf" download="download"  title="Kinetic and chemorheological modeling of thermosetting polyurethanes obtained from an epoxidized soybean oil polyol crosslinked with glycerin" text="Towards the development of a new matrix system, it is necessary to create cure kinetic and chemorheological models to deeply understand the curing behavior and the viscosity evolution against time of the resin involved in. In this occasion, Franco Armanasco participated on the development of a cure kinetic and chemorheological model of a soybean-based polyurethane system, in which different manufacturing processes can be predicted." />
+          <Project src="/project-2.jpeg" download="noDownload"  title="Vacuum Infusion Process Layout Design (Antares Catamarans)" text="40 Grados Sur, a yard dedicated to build Antares Catamarans, came to us with the necessity on improving its composite manufacturing process. They used to apply hand-lay up manufacturing processes to build all its composites parts. COMMANTECH helped them start using VARTM (vacuum assisted resin transfer molding), better known as infusion. We designed the infusion layout process and obtained the required supplies to build the hull and the deck, as well as bulkheads and big parts." />
+          <Project src="/The-role-of-post-cure-cycle-on-the-thermomechanical-properties-of-soy-based-polyurethane-thermosets.pdf" download="download" title="The role of post-cure cycle on the thermomechanical properties of soy-based polyurethane thermosets" text="In continuity on the research and development of the new biobased polyurethane system previously studied, Franco Armanasco participated on the characterization of the system in order to obtain its mechanical behavior by changing constituent in its formulation as well as its post-cure process. The results gave the research a boost to jump to a next step towards the development of new biobased resin systems." />
         </div>
       </div>
     </div>

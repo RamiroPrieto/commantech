@@ -7,10 +7,10 @@ import { HiLocationMarker } from 'react-icons/hi';
 import { GrMail } from 'react-icons/gr';
 import { AiFillPhone } from 'react-icons/ai';
 
-export const metadata = {
-  title: "Contact COMMANTECH",
-  description: "Contact Commantech",
-};
+// export const metadata = {
+//   title: "Contact COMMANTECH",
+//   description: "Contact Commantech",
+// };
 
 async function saveFormData(data) {
   return await fetch("https://formsubmit.co/info@commantech.it", {

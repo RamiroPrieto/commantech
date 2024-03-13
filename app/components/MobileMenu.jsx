@@ -29,7 +29,7 @@ const MobileMenu = () => {
           {/* Aquí añade los elementos del menú */}
           <a href="/about">About</a>
           <a href="/services">Services</a>
-          <a href="/pojects">Projects</a>
+          <a href="/projects">Projects</a>
           <a href="/contact">Contact</a>
         </div>
       )}

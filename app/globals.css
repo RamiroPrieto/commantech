@@ -1265,6 +1265,10 @@ footer{
   margin-bottom: 60px;
 }
 
+.noDownload{
+  display: none;
+}
+
 .projects__title{
   font-size: 56px;
   font-weight: 700;
