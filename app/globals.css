@@ -1374,3 +1374,29 @@ footer{
     width: 100%;
   }
 }
+
+/* MODAL */
+
+body{
+  position: relative;
+}
+
+.cookie-modal{
+  margin-top: 100px;
+  text-align: center;
+  position: fixed;
+  z-index: 200;
+  bottom: 0px;
+  background-color: rgb(95, 95, 95);
+  width: 100%;
+  padding: 10px;
+  color: white;
+}
+
+.cookie-modal-button{
+  background-color: rgb(55, 159, 55);
+  border: 1px solid green;
+  padding: 10px 5px;
+  margin-top: 10px;
+  color: white;
+}

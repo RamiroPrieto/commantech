@@ -2,6 +2,8 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import AnalyticsComponent from './components/AnalyticsComponent'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import Image from "next/image";
 import Head from "@/app/Head";
 
@@ -20,7 +22,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head/>
       <body className={inter.className}>
         <Image src="/Looper-3.png"
         alt="looper"
@@ -30,11 +31,14 @@ export default function RootLayout({
         >
         </Image>
         <Header/>
+        <Head/>
+        {/* <AnalyticsComponent/> */}
         <main>
           {children}
         </main>
         <Footer/>
       </body>
+      <GoogleAnalytics gaId="G-G5VPXS1CXL" />
     </html>
   )
 }

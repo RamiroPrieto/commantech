@@ -1,22 +1,31 @@
 "use client";
-import React, { useEffect } from 'react'
+import React from 'react'
+import { useEffect } from 'react';
+import ReactGA from 'react-ga';
+import CookieModal from './components/CookieModal';
 
 const Head = () => {
 
   useEffect(() => {
-    // Initialize GTM only on the client-side
-    if (typeof window !== 'undefined') {
-      const script = document.createElement('script');
-      script.src = `https://www.googletagmanager.com/gtm.js?id=G-G5VPXS1CXL`;
-      script.async = true;
-      document.head.appendChild(script);
-    }
+    ReactGA.initialize('TU_ID_DE_SEGUIMIENTO', {
+      gaOptions: {
+        cookieFlags: 'samesite=none;secure',
+      },
+    }); // Reemplaza 'TU_ID_DE_SEGUIMIENTO' con el ID de seguimiento real
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
-  
+  const [cookieAccepted, setCookieAccepted] = React.useState(false);
+
+  const handleAcceptCookie = () => {
+    setCookieAccepted(true);
+  };
+
   return (
-    <></>
-  )
+    <>
+      {!cookieAccepted && <CookieModal onAccept={handleAcceptCookie} />}
+    </>
+  );
 }
 
 export default Head
