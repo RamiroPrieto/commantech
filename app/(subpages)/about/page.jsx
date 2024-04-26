@@ -88,7 +88,7 @@ const AboutPage = () => {
                             
                         />
                         <div>
-                            University Degree Marine Engineering
+                            PhD Degree Bio Composites Engineering
                         </div>
                     </div>
                 </div>
