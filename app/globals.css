@@ -46,6 +46,15 @@
   margin: 0;
 }
 
+:root {
+  --font-figtree: "Figtree", sans-serif;
+}
+
+body {
+  font-family: var(--font-figtree);
+}
+
+
 html,
 body {
   max-width: 100vw;
@@ -58,14 +67,14 @@ body > main {
   width: 100vw;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Lato';
   src: url('/fonts/Lato-Regular.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: 'Lato';
   src: url('/fonts/Lato-Bold.ttf') format('ttf');
   font-weight: normal;
@@ -91,13 +100,13 @@ body > main {
   src: url('/fonts/Lato-Thin.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
   background-color: white;
   /* background: linear-gradient(180deg, #ededed 0%, rgba(255, 255, 254, 0) 100%); */
-  font-family: 'Lato', sans-serif !important;
+  /* font-family: 'Lato', sans-serif !important; */
 }
 
 a {
@@ -362,7 +371,7 @@ a {
 }
 
 .navBar__contact{
-  background-color: #093731;
+  background-color: #61493B;
   border-radius: 17.5px;
   padding: 4px 10px;
   color: white;
@@ -378,13 +387,28 @@ a {
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 30px;
+  
 }
 
 .PageTitle__title{
   font-size: 56px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 67.2px;
   display: flex;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.PageTitle_title--text{
+  max-width: 813px;
+}
+
+.PageTitle_title--color{
+  color: #61493B;
 }
 
 .PageTitle__title-align{
