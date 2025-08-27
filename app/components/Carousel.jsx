@@ -18,7 +18,7 @@ const EmblaCarousel = ({ slides, options = { loop: false } }) => {
     const [emblaRef] = useEmblaCarousel(options, [autoplay.current]);
     return (
         <div className="embla">
-            <div className='container embla__container'>
+            {/* <div className='container embla__container'>
                 <a href='#section'>
                     <Image
                         className="embla__arrow"
@@ -28,7 +28,7 @@ const EmblaCarousel = ({ slides, options = { loop: false } }) => {
                         height={75}
                     />
                 </a>
-            </div>
+            </div> */}
             <div className="embla__viewport" ref={emblaRef}>
                 <div className="embla__container">
                     {slides.map((index) => (

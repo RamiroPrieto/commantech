@@ -4,7 +4,8 @@ import ClientsPreview from "./components/ClientsPreview";
 import ProjectsPreview from "./components/ProjectsPreview";
 import PageTitle from "./components/PageTitle";
 import Intro from "./components/Intro";
-
+import Structure from "./components/Structure";
+import Services from "./components/Services";
 
 import styles from './page.module.css'
 
@@ -19,8 +20,10 @@ export default function Home() {
       <PageTitle></PageTitle>
       <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       <Intro></Intro>
-      <ProjectsPreview/>
-      <ServicesPreview/>
+      <Structure></Structure>
+      {/* <ProjectsPreview/> */}
+      {/* <ServicesPreview/> */}
+      <Services/>
       <ClientsPreview/>
     </>
   )
