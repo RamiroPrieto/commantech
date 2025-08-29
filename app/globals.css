@@ -738,7 +738,7 @@ b{
 
 footer{
   height: 150px;
-  margin-bottom: 40px;
+  margin-bottom: 180px;
   margin-top: 30px;
 }
 
@@ -749,6 +749,12 @@ footer{
   justify-content: flex-end;
 }
 
+.footer__logo{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
 .footer__right-item{
   display: flex;
   gap: 5px;
@@ -757,7 +763,6 @@ footer{
 .footer__container{
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid black;
   padding-top: 35px;
 }
 
@@ -786,6 +791,33 @@ footer{
   letter-spacing: 0em;
   text-align: right;
   margin-top: 20px;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  width: 50%;
+}
+
+.footer__title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+
+}
+
+.footer__text{
+  margin-bottom: 10px;
 }
 
 @media (max-width: 950px){
@@ -825,15 +857,20 @@ footer{
 /* Clients */
 
 .clients__title{
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 43px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 36px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .clients{
-  margin-top: 40px;
+  margin-top: 80px;
+  margin-bottom: 140px;
 }
 
 .clients__grid{
@@ -1424,18 +1461,26 @@ body{
   position: fixed;
   z-index: 200;
   bottom: 0px;
-  background-color: rgb(95, 95, 95);
+  background-color: white;
   width: 100%;
-  padding: 10px;
-  color: white;
+  padding: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 .cookie-modal-button{
-  background-color: rgb(55, 159, 55);
-  border: 1px solid green;
-  padding: 10px 5px;
-  margin-top: 10px;
-  color: white;
+  margin-top: 20px;
+  height: 35px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 20px;
+  color: #FFFFFF;
+  border: 3px solid #61493B;
+  border-radius: 17.5px;
+  background-color: #61493B;
 }
 
 /* Structure */
@@ -1572,4 +1617,85 @@ body{
   font-size: 20px;
   line-height: 130%;
   letter-spacing: 0%;
+}
+
+/* Loop clients */
+
+.clients__grid {
+  display: flex;
+  gap: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.clients__slider {
+  display: flex;
+  gap: 10rem;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.clients__item img {
+  height: 65px;  
+  width: auto;    
+  object-fit: contain;
+}
+
+/* Carrusel */
+.embla {
+  position: relative;
+  overflow: hidden;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+}
+
+.embla__slide__img {
+  object-fit: cover;
+}
+
+.embla__dots {
+  position: absolute;
+  bottom: 16px;
+  right: 50px;
+  display: flex;
+  gap: 8px;
+}
+
+.embla__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.embla__dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.embla__dot--selected {
+  background: #fff;
+  transform: scale(1.2);
 }
