@@ -49,37 +49,22 @@ const ContactPage = () => {
         >
         </Image> */}
       <div className="contact__left">
-        <div className="contact__left-getin">
-          Get in touch
-        </div>
-        <div className="contact__left-title">
-           Let’s work - <br></br> together!
-        </div>
-        <div className="contact__left-information">
-            <div>
-               <div className="contact__left-subtitle">
-                  ADDRESS
-               </div>
-               <div className="contact__left-info">
-                Via di Salicchi, 361 1P,<br></br> 55100 Lucca LU, Italia
-               </div>
-            </div>
-            <div>
-               <div className="contact__left-subtitle">
-               PHONE
-               </div>
-               <div className="contact__left-info">
-               (39) 331 3542388
-               </div>
-            </div>
-            <div>
-               <div className="contact__left-subtitle">
-               EMAIL
-               </div>
-               <div className="contact__left-info">
-               info@commantech.it
-               </div>
-            </div>
+        <h2 className="contact__left-title">
+          Are you interested in<span className="contact__left-title-color"> working together</span>?
+        </h2>
+        <div className="contact__left-info">
+          <div className="contact__left-info-data">
+            <div className="contact__left-info-data-title">Phone</div>
+            <div className="contact__left-info-data-info">(39) 331 3542388</div>
+          </div>
+          <div className="contact__left-info-data">
+            <div className="contact__left-info-data-title">Email</div>
+            <div className="contact__left-info-data-info">info@commantech.it</div>
+          </div>
+          <div className="contact__left-info-data">
+            <div className="contact__left-info-data-title">Address</div>
+            <div className="contact__left-info-data-info">Via di Salicchi, 361 1P, 55100 <br></br><br></br> Lucca LU, Italia</div>
+          </div>
         </div>
       </div>
       <div className="contact__right">
@@ -88,7 +73,7 @@ const ContactPage = () => {
           <form onSubmit={onSubmit}>
             <div>
               <input
-                type="name" value={name}
+                type="text" value={name}
                 className="form__input"
                 name="name" onChange={e => setName(e.target.value)}
                 id="exampleFormControlInput1"
@@ -98,7 +83,7 @@ const ContactPage = () => {
             </div>
             <div>
               <input
-                type="lastName" value={lastName}
+                type="text" value={lastName}
                 className="form__input"
                 name="name" onChange={e => setLastName(e.target.value)}
                 id="exampleFormControlInput1"
