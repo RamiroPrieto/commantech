@@ -42,13 +42,13 @@ const ContactPage = () => {
 
   return (
     <div className="container contact">
-      {/* <Image src="/Looper-3.png"
-        width={500}
-        height={500}
-        className="contact__looper"
-        >
-        </Image> */}
       <div className="contact__left">
+      <Image src="/arrowContact.svg"
+        width={130}
+        height={166}
+        className="contact__arrow"
+        >
+        </Image>
         <h2 className="contact__left-title">
           Are you interested in<span className="contact__left-title-color"> working together</span>?
         </h2>

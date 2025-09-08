@@ -9,7 +9,7 @@ const Services = () => {
         <div className='services__left'>
             <div className='services__title'>Services</div>
             <div className='services__description'>The use of <b>new renewable composite materials</b>  helps to counterbalance the extensive use of petroleum-based polymers used today. Hence, the industry is investing too much effort on applying them in their products.</div>
-            <Link href="/about" className='services__content-link'>
+            <Link href="/about" className='services__content-link link-desktop'>
               Get to know us
             </Link>
         </div>
@@ -86,6 +86,9 @@ const Services = () => {
                     Project management
                 </div>
             </div>
+            <Link href="/about" className='services__content-link link-mobile'>
+              Get to know us
+            </Link>
         </div>
     </div>
   )
