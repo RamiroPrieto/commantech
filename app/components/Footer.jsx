@@ -24,22 +24,33 @@ const Footer = () => {
             </div>
             <div className="footer__grid">
         
-                <div className='footer__grid-item'>
+                    <div className='footer__grid-item'>
                     <h4 className="footer__title">Address</h4>
-                    <p className='footer__text'>Via di Salicchi, 361 1P, 55100</p>
-                    <p className='footer__text'>Lucca LU, Italia</p>
+                    <a
+                        href="https://www.google.com/maps/place/Via+di+Salicchi,+361+1P,+55100+Lucca+LU,+Italia"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='footer__text'
+                    >
+                        <p className='footer__text'>Via di Salicchi, 361 1P, 55100</p>
+                        <p className='footer__text'>Lucca LU, Italia</p>
+                    </a>
                     </div>
 
                     <div className='footer__grid-item'>
                     <h4 className="footer__title">Contact</h4>
-                    <p className='footer__text'>(39) 331 3542388</p>
-                    <p className='footer__text'>info@commantech.it</p>
+                    <a href="tel:+393313542388" className='footer__text'>
+                    (39) 331 3542388
+                    </a>
+                    <a href="mailto:info@commantech.it" className='footer__text'>
+                        info@commantech.it
+                    </a>
                     </div>
 
                     <div className='footer__grid-item'>
                     <h4 className="footer__title">Follow us</h4>
-                    <p className='footer__text'>LinkedIn</p>
-                    <p className='footer__text'>Instagram</p>
+                    <a href='https://www.linkedin.com/company/commantech/' target='_blank' className='footer__text'>LinkedIn</a>
+                    <a href='https://www.instagram.com/commantech/' target='_blank' className='footer__text'>Instagram</a>
                     </div>
 
                     <div className='footer__grid-item'>

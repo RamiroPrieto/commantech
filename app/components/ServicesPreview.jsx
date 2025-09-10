@@ -33,7 +33,7 @@ const ServicesPreview = () => {
             <div className="services__grid">
                 <ServiceBox image="/fibra1.png" text="Composite manufacturing technology improvement" />
                 <ServiceBox image="/incrementar1.png" text="Potencial constituents and tooling" />
-                <div className='services__looperContainer'>
+                {/* <div className='services__looperContainer'>
                     <Image
                         className="services__looper"
                         src="./LooperServices.png"
@@ -41,7 +41,7 @@ const ServicesPreview = () => {
                         width={100}
                         height={100}
                     />
-                </div>
+                </div> */}
                 <ServiceBox image="/obrero1.png" text="Drapability and conforming predictions" />
                 <ServiceBox image="/iso-9001.png" text="Process quality control monitoring" />
                 <ServiceBox image="/incrementar2.png" text="Structural integrity studies" />
@@ -61,13 +61,13 @@ const ServicesPreview = () => {
                             />
                         </div>
                     </div>
-                    <Image
+                    {/* <Image
                         className="services__learnMore-looper"
                         src="./LooperGroupCut.png"
                         alt="looper"
                         width={50}
                         height={50}
-                    />
+                    /> */}
                 </Link>
                     
                

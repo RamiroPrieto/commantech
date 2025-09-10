@@ -25,13 +25,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={figtree.className}>
-        <Image 
+        {/* <Image 
           src="/Looper-3.png"
           alt="looper"
           width={500}
           height={500}
           className="looper__top"
-        />
+        /> */}
         <Header/>
         <Head/>
         {/* <AnalyticsComponent/> */}

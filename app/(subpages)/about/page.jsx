@@ -17,7 +17,14 @@ const AboutPage = () => {
                 width={172}
                 height={214}
             />
-            <div className='about__title-container'><h2 className='about__title'>Let’s get to - know each other </h2></div>
+            <Image
+                className='about__image image__left'
+                src="/aboutArrow.svg"
+                alt="About"
+                width={245}
+                height={164}
+            />
+            <div className='about__title-container'><h2 className='about__title'>Let’s get to <span className='about__title-highlight'>know</span> each other </h2></div>
         </div>
         <div className='looperContainer' id='section'>
         {/* <Image className='intro__looper' src="Maskgroup.png" alt="looperIntro" height={400} width={300}/> */}
@@ -34,7 +41,7 @@ const AboutPage = () => {
 
         <div className='intro__content'>
           <div className='intro__content-title'>Who we are</div>
-          <div className='intro__content-text'>
+          <div className='intro__content-text about__text'>
               This consultancy is the result of more than six years of experience and expertise in composites. It was founded and developed out of the need to explore <span className='intro__content-sub'>bio-based composite solutions</span>  that can truly help change the current paradigm of how composites are made today. This is a gradual process, requiring many trials and tests. That is where COMMANTECH, with its vast experience and strong international network, can make a difference.
           </div>
         </div>
@@ -123,10 +130,11 @@ const AboutPage = () => {
             </div>
             <div className='about__founder reverse'>
                 <div className='about__founder-info'>
-                    <div className='about__founder-name'>Martin Butto</div>
-                    <div className='about__founder-subtitle'>Mechanical Engineer</div>
+                    <div className='about__founder-name'>Eric Uranga</div>
+                    <div className='about__founder-subtitle'>Marine engineer</div>
                     <div className='about__founder-text'>
-                        Martin was born in Argentina. He graduated with honours from Universidad de Buenos Aires obtaining a degree in Mechanical Engineering. He began his career working in Tenaris, one of the world’s largest steel pipes manufacturers, as a process engineer on the heat treatment lines and as a product engineer on both sucker rods division and on pipes for automotive, mining, energy and general-purpose applications. Given his draw towards material science and recognizing the ever-growing applications of plastics, he decided to pursue a PhD in engineering in 2020. His research was aimed towards the development of self reinforced, biobased and biodegradable thermoplastics. He then decided to go back into an industrial setting to gain hands-on experience on composite design and manufacturing. So far, he has been working on the application of composite materials to high-performance agricultural applications.
+                        I am a Naval Engineer graduated from the National Technological University of Mar del Plata, Argentina. In 2020, I completed a Master's Degree in Naval Design at the University of Nebrija, Spain, where I am currently pursuing my professional career specialising in the nautical industry, combining experience in both refit and yacht construction. 
+I combine skills in the use of 2D and 3D pleasure craft design software with experience in project management and active communication with clients.
                     </div>
                     <div className='about__founder-degrees'>
                         <div className='about__founder-degreesItem'>
@@ -134,6 +142,32 @@ const AboutPage = () => {
                                 src="/degree1.svg"
                                 alt="University Degree
                                 Marine Engineering"
+                                width={47}
+                                height={47}
+                                
+                            />
+                            <div>
+                                University Degree Marine Engineering
+                            </div>
+                        </div>
+                        <div className='about__founder-degreesItem'>
+                            <Image
+                                src="/degree2.svg"
+                                alt="Master’s Degree
+                                Composites Engineering"
+                                width={47}
+                                height={47}
+                                
+                            />
+                            <div>
+                            Master’s Degree Composites Engineering
+                            </div>
+                        </div>
+                        <div className='about__founder-degreesItem'>
+                            <Image
+                                src="/title1.svg"
+                                alt="Doctor of Philosophy
+                                Bio Composites"
                                 width={47}
                                 height={47}
                                 

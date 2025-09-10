@@ -52,20 +52,36 @@ const ContactPage = () => {
         <h2 className="contact__left-title">
           Are you interested in<span className="contact__left-title-color"> working together</span>?
         </h2>
-        <div className="contact__left-info">
+        <div className="contact__left-info contact__left-info-desktop">
           <div className="contact__left-info-data">
             <div className="contact__left-info-data-title">Phone</div>
-            <div className="contact__left-info-data-info">(39) 331 3542388</div>
+            <div className="contact__left-info-data-info">
+              <a href="tel:+393313542388">(39) 331 3542388</a>
+            </div>
           </div>
+
           <div className="contact__left-info-data">
             <div className="contact__left-info-data-title">Email</div>
-            <div className="contact__left-info-data-info">info@commantech.it</div>
+            <div className="contact__left-info-data-info">
+              <a href="mailto:info@commantech.it">info@commantech.it</a>
+            </div>
           </div>
+
           <div className="contact__left-info-data">
             <div className="contact__left-info-data-title">Address</div>
-            <div className="contact__left-info-data-info">Via di Salicchi, 361 1P, 55100 <br></br><br></br> Lucca LU, Italia</div>
+            <div className="contact__left-info-data-info">
+              <a
+                href="https://www.google.com/maps/place/Via+di+Salicchi,+361+1P,+55100+Lucca+LU,+Italia"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Via di Salicchi, 361 1P, 55100 <br /><br></br> Lucca LU, Italia
+              </a>
+            </div>
           </div>
         </div>
+
+
       </div>
       <div className="contact__right">
         <div className="form__container">
@@ -132,6 +148,36 @@ const ContactPage = () => {
           
         </div>
       </div>
+      <div className="contact__left-info contact__left-info-mobile">
+          <div className="contact__left-info-data">
+            <div className="contact__left-info-data-title">Phone</div>
+            <div className="contact__left-info-data-info">
+              <a href="tel:+393313542388">(39) 331 3542388</a>
+            </div>
+          </div>
+
+          <div className="contact__left-info-data">
+            <div className="contact__left-info-data-title">Email</div>
+            <div className="contact__left-info-data-info">
+              <a href="mailto:info@commantech.it">info@commantech.it</a>
+            </div>
+          </div>
+
+          <div className="contact__left-info-data">
+            <div className="contact__left-info-data-title">Address</div>
+            <div className="contact__left-info-data-info">
+              <a
+                href="https://www.google.com/maps/place/Via+di+Salicchi,+361+1P,+55100+Lucca+LU,+Italia"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Via di Salicchi, 361 1P, 55100 <br /><br></br> Lucca LU, Italia
+              </a>
+            </div>
+          </div>
+        </div>
+
+      
       {/* <div className={styles.rightPanel}>
         <div className={styles.contact_panel}>
           <Link href={process.env.location}>

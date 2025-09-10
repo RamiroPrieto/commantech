@@ -19,13 +19,13 @@ const Intro = () => {
 
         <div className='intro__content'>
           <div className='intro__content-image'><Image
-              className=""
+              className="intro__content-image-img"
               src="/Group1.svg"
               alt="Group1.png"
               width={89.93191528320312}
               height={101.45182037353516}
             /></div>
-          <div className='intro__content-title'>Composites manufacturing consultancy</div>
+          <div className='intro__content-title intro__page'>Composites manufacturing consultancy</div>
           <div className='intro__content-text'>
               At <span className='intro__content-sub'>COMMANTECH</span>, we specialize on giving the best solution for a BIO or traditional composite manufacturing process, reducing costs with a process optimization and choosing the best available products in the market.
           </div>

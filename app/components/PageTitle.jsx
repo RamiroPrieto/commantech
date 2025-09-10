@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from "next/image";
+
 
 const PageTitle = () => {
   return (
@@ -7,6 +9,13 @@ const PageTitle = () => {
             {/* <div className='PageTitle__subtitle'>Composites manufacturing consultancy</div> */}
             <div className='PageTitle__title'> <p className="PageTitle_title--text">Aligning your shipyard - with the <span className='PageTitle_title--color'>bio-based composites</span> trend.</p></div>
         </div>
+        <Image
+              className="PageTitle__img"
+              src="/svgInicio.svg"
+              alt="svgInicio.svg"
+              width={255}
+              height={238}
+          />
     </div>
   )
 }

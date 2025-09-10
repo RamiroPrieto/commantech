@@ -37,7 +37,7 @@ const Project = ({ src, text, title, download }) => {
 const ProjectsPage = () => {
   return (
     <div className="container projects__container">
-      <h1 className="projects__title">Some of our <span style={{ color: "#61493B" }}>works</span></h1>
+      <h1 className="projects__title">Some of our <span style={{ color: "#A16944" }}>works</span></h1>
       <div className="projects">
         <div className="projects__item"> 
           <div className="projects__item-left">
@@ -45,7 +45,7 @@ const ProjectsPage = () => {
             <div className="projects__item-info">We were commissioned to build thin films with a previous developed formulation. Those were performed with a polyurethane matrix made from a 100% biopolyol and common MDI isocyanate...</div>
             <a className="projects__item-button" href="/Kinetic-and-chemorheological-modeling-of-thermosetting.pdf" download>Open PDF</a>
           </div>
-          <div className="projects__item-right">
+          <div className="projects__item-right first">
             <Image
               className="projects__img-inner"
               src="/projectImg1.png"
@@ -86,18 +86,18 @@ const ProjectsPage = () => {
             />
           </div>
         </div>
-        <div className="projects__title">Our <span style={{ color: "#61493B" }}>reports</span></div>
+        <div className="projects__title-secondary">Our <span style={{ color: "#A16944" }}>reports</span></div>
         <div className="projects__item"> 
           <div className="projects__item-bottom">
-            <div className="projects__item-bottom-title">Hull and deck full structural analysis</div>
-            <div className="projects__item-bottom-info">We developed an advanced finite element model to deeply understand the hull and deck composites behavior of a 51 footer sailing boat that must reach the best quality standards.</div>
+            <div className="projects__item-bottom-title">Kinetic and chemorheological modeling of thermosetting polyurethanes obtained from an epoxidized soybean oil polyol crosslinked with glycerin</div>
+            <div className="projects__item-bottom-info">Towards the development of a new matrix system, it is necessary to create cure kinetic and chemorheological models to deeply understand the curing behavior and the viscosity evolution against time of the resin involved in. In this occasion, Franco Armanasco participated on the development of a cure kinetic and chemorheological model of a soybean-based polyurethane system, in which different manufacturing processes can be predicted.</div>
             <a className="projects__item-button" href="/Kinetic-and-chemorheological-modeling-of-thermosetting.pdf" download>Download report</a>
           </div>
         </div>
         <div className="projects__item"> 
           <div className="projects__item-bottom">
-            <div className="projects__item-bottom-title">Hull and deck full structural analysis</div>
-            <div className="projects__item-bottom-info">40 Grados Sur, a yard dedicated to build Antares Catamarans, came to us with the necessity on improving its composite manufacturing process. They used to apply hand-lay up manufacturing processes to build all its composites parts. COMMANTECH helped them start using VARTM (vacuum assisted resin transfer molding), better known as infusion. We designed the infusion layout process and obtained the required supplies to build the hull and the deck, as well as bulkheads and big parts.</div>
+            <div className="projects__item-bottom-title">Vacuum infusion process layout design (Antares Catamaran)</div>
+            <div className="projects__item-bottom-info">Vacuum infusion process layout design (Antares Catamaran)</div>
             <a className="projects__item-button" href="/Kinetic-and-chemorheological-modeling-of-thermosetting.pdf" download>Download report</a>
           </div>
         </div>
