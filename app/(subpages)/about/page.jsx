@@ -24,7 +24,7 @@ const AboutPage = () => {
                 width={245}
                 height={164}
             />
-            <div className='about__title-container'><h2 className='about__title'>Let’s get to <span className='about__title-highlight'>know</span> each other </h2></div>
+            <div className='about__title-container'><h2 className='about__title'>Let&apos;s get to  <span className='about__title-highlight'>know</span> each other </h2></div>
         </div>
         <div className='looperContainer' id='section'>
         {/* <Image className='intro__looper' src="Maskgroup.png" alt="looperIntro" height={400} width={300}/> */}
@@ -61,7 +61,7 @@ const AboutPage = () => {
                     /> */}
                     <Image
                         className="about__founder-img"
-                        src="/francoFace.png"
+                        src="/francoImg.png"
                         alt="Franco Armanasco"
                         width={170}
                         height={170}
@@ -89,8 +89,7 @@ const AboutPage = () => {
                         <div className='about__founder-degreesItem'>
                             <Image
                                 src="/degree1.svg"
-                                alt="University Degree
-                                Marine Engineering"
+                                alt="University Degree Marine Engineering"
                                 width={47}
                                 height={47}
                                 
@@ -102,8 +101,7 @@ const AboutPage = () => {
                         <div className='about__founder-degreesItem'>
                             <Image
                                 src="/degree2.svg"
-                                alt="Master’s Degree
-                                Composites Engineering"
+                                alt="Master’s Degree Composites Engineering"
                                 width={47}
                                 height={47}
                                 
@@ -115,8 +113,7 @@ const AboutPage = () => {
                         <div className='about__founder-degreesItem'>
                             <Image
                                 src="/title1.svg"
-                                alt="Doctor of Philosophy
-                                Bio Composites"
+                                alt="Doctor of Philosophy Bio Composites"
                                 width={47}
                                 height={47}
                                 
@@ -133,15 +130,14 @@ const AboutPage = () => {
                     <div className='about__founder-name'>Eric Uranga</div>
                     <div className='about__founder-subtitle'>Marine engineer</div>
                     <div className='about__founder-text'>
-                        I am a Naval Engineer graduated from the National Technological University of Mar del Plata, Argentina. In 2020, I completed a Master's Degree in Naval Design at the University of Nebrija, Spain, where I am currently pursuing my professional career specialising in the nautical industry, combining experience in both refit and yacht construction. 
+                        I am a Naval Engineer graduated from the National Technological University of Mar del Plata, Argentina. In 2020, I completed a Master&apos;s Degree in Naval Design at the University of Nebrija, Spain, where I am currently pursuing my professional career specialising in the nautical industry, combining experience in both refit and yacht construction. 
 I combine skills in the use of 2D and 3D pleasure craft design software with experience in project management and active communication with clients.
                     </div>
                     <div className='about__founder-degrees'>
                         <div className='about__founder-degreesItem'>
                             <Image
                                 src="/degree1.svg"
-                                alt="University Degree
-                                Marine Engineering"
+                                alt="University Degree Marine Engineering"
                                 width={47}
                                 height={47}
                                 
@@ -153,8 +149,7 @@ I combine skills in the use of 2D and 3D pleasure craft design software with exp
                         <div className='about__founder-degreesItem'>
                             <Image
                                 src="/degree2.svg"
-                                alt="Master’s Degree
-                                Composites Engineering"
+                                alt="Master’s Degree Composites Engineering"
                                 width={47}
                                 height={47}
                                 
@@ -166,8 +161,7 @@ I combine skills in the use of 2D and 3D pleasure craft design software with exp
                         <div className='about__founder-degreesItem'>
                             <Image
                                 src="/title1.svg"
-                                alt="Doctor of Philosophy
-                                Bio Composites"
+                                alt="Doctor of Philosophy Bio Composites"
                                 width={47}
                                 height={47}
                                 
@@ -189,8 +183,8 @@ I combine skills in the use of 2D and 3D pleasure craft design software with exp
                     /> */}
                     <Image
                         className="about__founder-img"
-                        src="/martinB.png"
-                        alt="Martin B."
+                        src="/ericImg.jpg"
+                        alt="Eric Uranga"
                         width={170}
                         height={170}
                         priority
