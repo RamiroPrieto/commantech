@@ -10,7 +10,7 @@ const logos = [
   { src: "/clients-3.png", width: 181, height: 72, alt: "ginogandino" },
   { src: "/clients-6.jpg", width: 148, height: 64, alt: "cryachts" },
   { src: "/nautor.png", width: 94, height: 63, alt: "nautor's swan" },
-  { src: "/clients-5.png", width: 120, height: 30, alt: "bryd" },
+  { src: "/clients-5.png", width: 100, height: 30, alt: "bryd" },
 ];
 
 const infiniteLogos = [...logos, ...logos];
@@ -18,11 +18,11 @@ const infiniteLogos = [...logos, ...logos];
 const ClientsPreview = () => {
   return (
     <div className="clients container">
-      <h2 className="clients__title">Clients - who trust us</h2>
+      <h2 className="clients__title">Our clients</h2>
       <div className="clients__grid">
         <div className="clients__slider">
           {infiniteLogos.map((logo, i) => (
-            <div key={i} className="clients__item">
+            <div key={i} className={`clients__item ${logo.alt}`}>
               <Image
                 src={logo.src}
                 alt={logo.alt}

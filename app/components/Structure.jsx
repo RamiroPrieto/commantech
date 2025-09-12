@@ -41,8 +41,8 @@ const Structure = () => {
                         width={50}
                         height={44}
                     />
-                    <div className='structure__items-item-title'>Advanced engineering and calculation</div>
-                    <div className='structure__items-item-description'>Development of finite element models from micro to macro scale in order to understand different behaviours and proper calculate your part made in composites.</div>
+                    <div className='structure__items-item-title'>Manufacturing <br></br> modeling</div>
+                    <div className='structure__items-item-description'>Models generated and calibrated to predict filling time, curing temperature, pressure conditions within your composite manufacturing process selected.</div>
                 </div>
                 <div className="structure__items-item-bottom">
                     <div className='structure__items-item-image'>
@@ -65,8 +65,8 @@ const Structure = () => {
                         width={50}
                         height={44}
                     />
-                    <div className='structure__items-item-title'>Advanced engineering and calculation</div>
-                    <div className='structure__items-item-description'>Development of finite element models from micro to macro scale in order to understand different behaviours and proper calculate your part made in composites.</div>
+                    <div className='structure__items-item-title'>Research and development of bio materials</div>
+                    <div className='structure__items-item-description'>Using our laboratory and collaborators to build the composite you may need in your part or component. Starting from prototypes up to the final result.</div>
                 </div>
                 <div className="structure__items-item-bottom">
                     <div className='structure__items-item-image'>

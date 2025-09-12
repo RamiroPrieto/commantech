@@ -119,7 +119,7 @@ const AboutPage = () => {
                                 
                             />
                             <div>
-                                University Degree Marine Engineering
+                                Doctor of Philosophy Bio Composites
                             </div>
                         </div>
                     </div>
@@ -155,11 +155,11 @@ I combine skills in the use of 2D and 3D pleasure craft design software with exp
                                 
                             />
                             <div>
-                            Master’s Degree Composites Engineering
+                            Master’s Degree Naval Design
                             </div>
                         </div>
                         <div className='about__founder-degreesItem'>
-                            <Image
+                            {/* <Image
                                 src="/title1.svg"
                                 alt="Doctor of Philosophy Bio Composites"
                                 width={47}
@@ -168,7 +168,7 @@ I combine skills in the use of 2D and 3D pleasure craft design software with exp
                             />
                             <div>
                                 University Degree Marine Engineering
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
