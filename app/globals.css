@@ -143,6 +143,13 @@ a {
   border-bottom-right-radius: 50px;  /* esquina inferior derecha */
   overflow: hidden;
 }
+
+@media (max-width: 800px) {
+  .embla__viewport {
+    height: 500px;
+  }
+}
+
 .embla__container {
   backface-visibility: hidden;
   display: flex;
@@ -384,8 +391,17 @@ a {
   background-color: #A16944;
 }
 
+.navBar__contact:active {
+  background-color: #FFE2A7;  
+}
+
+
 .navBar__link:hover{
   color: #A16944;
+}
+
+.navBar__link:active {
+  background-color: #FFE2A7;  
 }
 
 .PageTitle{
@@ -455,6 +471,13 @@ a {
   margin-top: 0px;
   margin-bottom: 0px;
   height: 100vh;
+}
+
+@media (max-width: 800px) {
+  .services{
+    height: auto;
+  }
+  
 }
 
 .services__top{
@@ -747,6 +770,14 @@ b{
     max-width: none;
     width: 100%;
   }
+
+  @media (max-width: 850px) {
+    .contact__left-title{
+      font-size: 46px;
+      margin-bottom: 50px;
+    }
+  }
+
   .contact__left-info.contact__left-info-mobile{
     display: flex;
     align-items: center;
@@ -815,9 +846,13 @@ b{
 }
 
 .form__button:hover{
-  /* background-color: #FFE2A7; */
   background-color: #FFE2A7;
 }
+
+.form__button:active{
+  background-color: #FFE2A7;  
+}
+
 .looper__top{
   position: absolute;
   width: 100%;
@@ -1106,6 +1141,13 @@ footer{
   height: 100vh;
 }
 
+@media (max-width: 800px){
+  .looperContainer{
+    height:auto;
+  }
+  
+}
+
 .intro__looper{
   position: absolute;
   top: 0;
@@ -1159,6 +1201,10 @@ footer{
   background-color: #FFE2A7;
 }
 
+.intro__content-link:active{
+  background-color: #FFE2A7;   
+}
+
 @media (max-width: 500px) {
   .intro__content{
     width: 100%;
@@ -1179,11 +1225,12 @@ footer{
     padding: 0%;
   }
   .intro__content-title{
-    font-size: 26px;
+    font-size: 36px;
     text-align: center;
   }
   .intro__content-title.intro__page{
     text-align: left;
+    font-size: 26px;
   }
   .intro__content-image-img{
     width: 50px;
@@ -1608,6 +1655,13 @@ footer{
   margin-bottom: 30px;
 }
 
+@media (max-width: 758px){
+  .projects__item-title{
+    font-size: 36px;
+  }
+  
+}
+
 .projects__item-info{
   font-weight: 400;
   font-size: 20px;
@@ -1637,6 +1691,10 @@ footer{
 
 .projects__item-button:hover{
   background-color: #A16944;
+}
+
+.projects__item-button:active {
+  background-color: #FFE2A7;   
 }
 
 .projects__title{
@@ -1909,7 +1967,7 @@ body{
 
 @media (max-width: 1080px){
   .structure__title{
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .structure__items{
@@ -1962,6 +2020,10 @@ body{
   background-color: #FFE2A7;
 }
 
+.services__content-link:active {
+  background-color: #FFE2A7;   
+}
+
 .services__left{
   max-width: 30%;
 }
@@ -1997,18 +2059,20 @@ body{
     max-width: 100%;
   }
   .services__right{
-    align-items: center;
+    align-items: baseline;
   }
   .services__right-item{
     font-size: 17px;
+    text-align: left;
   }
   .link-desktop{
     display: none;
   }
-  .link-mobile{
+  .link-mobile.services__content-link{
     display: inline-block;
     width: auto;
-    margin-top: 15px;
+    margin: auto;
+    margin-top: 35px;
   }
 }
 
@@ -2097,6 +2161,10 @@ body{
   background: rgba(255, 255, 255, 0.8);
 }
 
+.embla__dot:active {
+  background-color: #FFE2A7;   
+}
+
 .embla__dot--selected {
   background: #fff;
   transform: scale(1.2);
@@ -2118,10 +2186,19 @@ body{
   background-color: #ECEAE4;
 }
 
+
+
 .services__top{
   margin-top: 30px;
   position: relative;
   margin-bottom: 200px;
+}
+
+@media (max-width: 1000px) {
+  .services__top{
+    flex-direction: column; 
+    margin-bottom: 0%;
+  }
 }
 
 .services__top-intro{
@@ -2207,6 +2284,7 @@ body{
   .structure__items-item.structure__services{
     max-width: none;
     width: 100%;
+    margin-bottom: 40px;
   }
   .servicesI__grid{
     grid-gap: 0px;
@@ -2225,6 +2303,13 @@ body{
   .structure__items-item.structure__services{
     height: 640px;
   }
+}
+
+@media (max-width: 600px) {
+  .structure__items-item.structure__services{
+    height: auto;
+  }
+  
 }
 
 /* Navigation */
@@ -2253,6 +2338,7 @@ body{
 .navBar__contact {
   padding: 8px 20px;
   width: auto;
+  margin-bottom: 6px;
 }
 
 body {
@@ -2260,10 +2346,10 @@ body {
   min-height: 100vh;
   background: linear-gradient(
     182.1deg,
-    #FFFFFF 26.69%,
-    #FFF5DF 59.86%,
-    #FFF9EB 86.63%
+    #FFFFFF 10%,   /* más blanco arriba */
+    #FFFBEA 65%,   /* amarillo más claro, empieza más abajo */
+    #FFF7D6 95%    /* más abajo el amarillo */
   );
-  background-attachment: fixed; /* hace que siga la pantalla */
-  background-size: cover;       /* asegura que cubra todo */
+  background-attachment: fixed;
+  background-size: cover;
 }
