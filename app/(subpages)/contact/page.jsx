@@ -41,47 +41,57 @@ const ContactPage = () => {
     }
 
   return (
+    <div style={{position: "relative"}}>
+      <Image
+        className='contact__img'
+        src="/fondoContact.svg"
+        alt="About"
+        width={250}
+        height={280}
+    />
     <div className="container contact">
-      <div className="contact__left">
-      <Image src="/arrowContact.svg"
-        width={130}
-        height={166}
-        className="contact__arrow"
-        >
-        </Image>
-        <h2 className="contact__left-title">
-          Are you interested in<span className="contact__left-title-color"> working together</span>?
-        </h2>
-        <div className="contact__left-info contact__left-info-desktop">
-          <div className="contact__left-info-data">
-            <div className="contact__left-info-data-title">Phone</div>
-            <div className="contact__left-info-data-info">
-              <a href="tel:+393313542388">(39) 331 3542388</a>
+      <div className="contact__left-container">
+        <div className="contact__left">
+        <Image src="/arrowContact.svg"
+          width={130}
+          height={166}
+          className="contact__arrow"
+          >
+          </Image>
+          <h2 className="contact__left-title">
+            Are you interested in<span className="contact__left-title-color"> working together</span>?
+          </h2>
+          <div className="contact__left-info contact__left-info-desktop">
+            <div className="contact__left-info-data">
+              <div className="contact__left-info-data-title">Phone</div>
+              <div className="contact__left-info-data-info">
+                <a href="tel:+393313542388">(39) 331 3542388</a>
+              </div>
+            </div>
+
+            <div className="contact__left-info-data">
+              <div className="contact__left-info-data-title">Email</div>
+              <div className="contact__left-info-data-info">
+                <a href="mailto:info@commantech.it">info@commantech.it</a>
+              </div>
+            </div>
+
+            <div className="contact__left-info-data">
+              <div className="contact__left-info-data-title">Address</div>
+              <div className="contact__left-info-data-info">
+                <a
+                  href="https://www.google.com/maps/place/Via+di+Salicchi,+361+1P,+55100+Lucca+LU,+Italia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Via di Salicchi, 361 1P, 55100 <br /><br></br> Lucca LU, Italia
+                </a>
+              </div>
             </div>
           </div>
 
-          <div className="contact__left-info-data">
-            <div className="contact__left-info-data-title">Email</div>
-            <div className="contact__left-info-data-info">
-              <a href="mailto:info@commantech.it">info@commantech.it</a>
-            </div>
-          </div>
 
-          <div className="contact__left-info-data">
-            <div className="contact__left-info-data-title">Address</div>
-            <div className="contact__left-info-data-info">
-              <a
-                href="https://www.google.com/maps/place/Via+di+Salicchi,+361+1P,+55100+Lucca+LU,+Italia"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Via di Salicchi, 361 1P, 55100 <br /><br></br> Lucca LU, Italia
-              </a>
-            </div>
-          </div>
         </div>
-
-
       </div>
       <div className="contact__right">
         <div className="form__container">
@@ -130,7 +140,7 @@ const ContactPage = () => {
             </div>
             <div >
               <textarea
-                className="form__input"
+                className="form__input textarea-lined"
                 name="message" value={message}
                 id="exampleFormControlTextarea1"
                 rows="3" onChange={e => setMessage(e.target.value)}
@@ -142,7 +152,7 @@ const ContactPage = () => {
                 By submitting this form, you consent to share your personal information with us to service your request and for communication purposes. We do not sell your data to third parties. 
             </div>
             <button className="form__button" type="submit">
-              Send Message
+              Send message
             </button>
           </form>
           
@@ -177,28 +187,7 @@ const ContactPage = () => {
           </div>
         </div>
 
-      
-      {/* <div className={styles.rightPanel}>
-        <div className={styles.contact_panel}>
-          <Link href={process.env.location}>
-            <Image
-              src="/location.png"
-              alt="Location"
-              width={300}
-              height={300}
-            />
-          </Link>
-          <p>
-            <HiLocationMarker/> Address: <Link href={process.env.location} target="_blank" className={styles.link}>Via di Salicchi, 361 1P, 55100 Lucca LU, Italia</Link>
-          </p>
-          <p>
-            <AiFillPhone/> Phone: <Link href="tel:+393313542388" target="_blank" className={styles.link}>(39) 331 3542388</Link>
-          </p>
-          <p>
-            <GrMail/> Email: <Link href="mailto:info@commantech.it" target="_blank" className={styles.link}>info@commantech.it</Link>
-          </p>
-        </div>
-      </div> */}
+    </div>
     </div>
   );
 };

@@ -11,7 +11,7 @@ const PageTitle = () => {
         </div>
         <Image
               className="PageTitle__img"
-              src="/svgInicio.svg"
+              src="/fondoHome1.svg"
               alt="svgInicio.svg"
               width={255}
               height={238}

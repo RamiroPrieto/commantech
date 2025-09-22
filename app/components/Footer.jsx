@@ -56,7 +56,7 @@ const Footer = () => {
                     <div className='footer__grid-item'>
                     <h4 className="footer__title">License</h4>
                     <p className='footer__text'>VAT NUMBER: IT02687920468</p>
-                    <p className='footer__text'>© 2023 CommanTech. All Rights Reserved</p>
+                    <p className='footer__text'>© 2025 COMMANTECH. All Rights Reserved</p>
                     </div>
 
                 </div>

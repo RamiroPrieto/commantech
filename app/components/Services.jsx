@@ -5,6 +5,14 @@ import Image from 'next/image'
 
 const Services = () => {
   return (
+    <div className='services__outside'>
+    <Image
+        className="services__img"
+        src="/fondoHome3.svg"
+        alt="svgInicio.svg"
+        width={255}
+        height={238}
+    />
     <div className='services container'>
         <div className='services__left'>
             <div className='services__title'>Services</div>
@@ -90,6 +98,7 @@ const Services = () => {
               Get to know us
             </Link>
         </div>
+    </div>
     </div>
   )
 }

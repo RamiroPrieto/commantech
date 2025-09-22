@@ -4,19 +4,39 @@ import { usePathname } from "next/navigation";
 import "../globals.css";
 import headerStyles from "../header.module.css";
 import MobileMenu from "./MobileMenu";
-
-
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const pathname = usePathname();
-    console.log(pathname)
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? "header--small" : ""}`}>
       <div className="header__container container">
         <div className="header__logo">
-          <Link href="/" className="header__titulo">
-            <div>COMMANTECH</div>
-            <div className="header__titulo-srls">SRLS</div>
+          <Link href="/" className="" style={{ display: "block", alignItems: "center" }}>
+            <Image
+              className=""
+              src="/logoNew.svg"
+              alt="logoNew.svg"
+              width={230}
+              height={50}
+            />
           </Link>
         </div>
 

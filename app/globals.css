@@ -114,6 +114,11 @@ a {
   text-decoration: none;
 }
 
+::selection {
+  background: #eec77a;
+  color: #000; 
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -348,13 +353,14 @@ a {
   font-size: 1.5rem;
   cursor: pointer;
   width: 30px;
+  color: #61493B;
 }
 
 .menuItems {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 100px; /* Ajusta según tu diseño */
+  top: 70px; /* Ajusta según tu diseño */
   right: 0px; /* Ajusta según tu diseño */
   background-color: white;
   border: 1px solid #ccc;
@@ -391,18 +397,18 @@ a {
   background-color: #A16944;
 }
 
-.navBar__contact:active {
+/* .navBar__contact:active {
   background-color: #FFE2A7;  
-}
+} */
 
 
 .navBar__link:hover{
   color: #A16944;
 }
 
-.navBar__link:active {
+/* .navBar__link:active {
   background-color: #FFE2A7;  
-}
+} */
 
 .PageTitle{
   margin: 200px 0px 130px 0px;
@@ -413,6 +419,7 @@ a {
 .PageTitle__img{
   position: absolute;
   right: 0;
+  top: 94%;
 }
 
 .PageTitle__subtitle{
@@ -641,19 +648,30 @@ b{
   justify-content: space-between;
   min-height: 700px;
   margin-top: 80px;
-  padding: 0px 120px;
+  /* padding: 0px 120px; */
 }
 
+.contact__left-container{
+  display: flex;
+  align-items: center;
+  width: 45%;
+  flex-direction: column;
+}
+
+@media(max-width: 850px) {
+  .contact__left-container{
+    width: 100%;
+  }
+}
 
 .contact__left{
-  width: 50%;
   position: relative;
 }
 
 .contact__arrow{
   position: absolute;
-  top: 35%;
-  right: 30%;
+  top: 45%;
+    right: -15%;
 }
 
 .contact__right{
@@ -661,12 +679,10 @@ b{
 }
 
 .form__container{
-  /* max-width: 600px; */
   border-radius: 40px;
-  /* border: 1px solid black; */
-  box-shadow: 0px 0px 10px 0px #022d321a;
   width: 80%;
   padding: 45px;
+  margin: auto;
   background-color: #ECEAE4;
 }
 
@@ -806,13 +822,13 @@ b{
 }
 
 
-.form__input::placeholder {
+/* .form__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
   letter-spacing: 0;
   color: #61493B;
-}
+} */
 
 .form__text {
   text-align: left;
@@ -831,7 +847,7 @@ b{
   letter-spacing: 0em;
   text-align: left;
   background-color: white;
-  padding: 7px 13px;
+  padding: 8px 18px;
   border: 3px solid #61493B;
   font-weight: 700;
   font-style: Bold;
@@ -843,6 +859,7 @@ b{
   border-radius: 50px;
   color: #61493B;
   background-color: #ECEAE4;
+
 }
 
 .form__button:hover{
@@ -998,7 +1015,7 @@ footer{
 @media (max-width: 670px) {
 
   footer{
-    height: 460px;
+    height: auto;
   }
   .footer__right-container{
     flex-direction: column;
@@ -1165,6 +1182,7 @@ footer{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .intro__content-cont{
@@ -1247,6 +1265,7 @@ footer{
   }
 }
 
+
 /* About */
 
 .about__title{
@@ -1258,6 +1277,32 @@ footer{
   /* margin-bottom: 50px;
   margin-top: 150px; */
   text-align: center;
+}
+
+.intro__about{
+  align-items: baseline;
+  max-width: 514px;
+  width: 100%;
+}
+
+.intro__content-container{
+  width: 57%;
+  display: flex;
+  justify-content: center;
+
+}
+
+@media (max-width: 900px) {
+  .intro__about{
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1080px) {
+  .intro__content-container{
+    width: 100%;
+  }
 }
 
 .about__title-highlight{
@@ -1275,6 +1320,11 @@ footer{
 @media (max-width: 900px) {
   .about__title{
     margin-top: 50px;
+  }
+  .about__title-container{
+    height: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
   }
 }
 
@@ -1296,11 +1346,13 @@ footer{
 
 .about__founder{
   display: grid;
-  grid-template-columns: 30% 65%;
+  grid-template-columns: 35% 60%;
   gap: 5%;
   margin-bottom: 120px;
   align-items: center;
   margin-top: 200px;
+  margin-right: auto;
+  width: 88%;
 }
 
 .about__founder-img{
@@ -1334,6 +1386,20 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding-left: 30px;
+}
+
+.reverse__info{
+  padding-left: 0px;
+  padding-right: 30px;
+}
+
+@media (max-width: 950px){
+  .about__founder-info{
+    padding: 0%;
+  }
+
+  
 }
 
 .about__founder-text{
@@ -1345,9 +1411,16 @@ footer{
 }
 
 .about__founder-degrees{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 15px; /* espacio entre filas y columnas */
+}
+
+@media (max-width: 600px){
+  .about__founder-degrees{
+    grid-template-columns: 1fr; /* 1 columna */
+  }
+  
 }
 
 .about__founder-degreesItem{
@@ -1371,14 +1444,65 @@ footer{
   right: 0;
 }
 
-.image__left{
-  left: 10%;
+.about__img{
+  position: absolute;
+  top: 270px;
+  right: -33px;
 }
 
-@media (max-width: 600px){
+.contact__img{
+  position: absolute;
+  top: 332px;
+  right: -123px;
+}
+
+.projectsf__img{
+  position: absolute;
+  top: 255px;
+  right: -100px;
+}
+
+.projectsl__img{
+  position: absolute;
+  top: 66%;
+  left: -50px;
+}
+
+.image__left{
+  left: 10%;
+  bottom: -64px;
+}
+
+@media (max-width: 900px){
   .about__image{
     display: none;
   }
+  .about__img{
+    display: none;
+  }
+  .projectsf__img{
+    display: none;
+  }
+
+  .projectsl__img{
+    display: none;
+  }
+}
+
+@media (max-width: 1000px){
+  .projectsl__img{
+    display: none;
+  }
+}
+
+@media (max-width: 1150px){
+  .contact__img{
+    display: none;
+  }
+}
+
+@media (max-width: 600px){
+
   .about__founder{
     margin-top: 100px;
   }
@@ -1386,13 +1510,16 @@ footer{
 
 .about__founder.reverse{
   display: grid;
-  grid-template-columns: 65% 30%;
+  grid-template-columns: 60% 35%;
   grid-gap: 5%;
   gap: 5%;
   margin-bottom: 120px;
   align-items: center;
   margin-top: 100px;
+  margin-left: auto;
+  margin-right: 0;
 }
+
 
 
 @media (max-width: 1574px){
@@ -1424,6 +1551,7 @@ footer{
 @media (max-width: 950px){
   .about__founder{
     grid-template-columns: 100%;
+    width: 100%;
   }
   .about__founder.reverse{
     grid-template-columns: 100%;
@@ -1448,18 +1576,20 @@ footer{
   }
 }
 
-.about__founder-container{
-  position: relative;
+
+
+
+.about__founder-container {
+  width: 100%;                /* se adapta al ancho disponible */
+  max-width: 416px;           /* límite máximo */
+  aspect-ratio: 416 / 502;    /* mantiene la proporción original */
+  position: relative;         /* necesario para que funcione `fill` */
 }
 
-/* .about__founder-container::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-top: 70px solid white;
-  border-left: 150px solid #f1f0ed00;
-} */
+.about__founder-img {
+  object-fit: cover;          /* recorta si sobra */
+}
+
 
 
 .about__ornament{
@@ -1886,7 +2016,33 @@ body{
 /* Structure */
 
 .structure{
-  margin-top: 250px;
+  padding-top: 250px;
+}
+
+.structure__outside{
+  position: relative;
+}
+
+.structure__img{
+  position: absolute;
+  top: -50px;
+  left: -90px;
+}
+
+.services__outside{
+  position: relative;
+}
+
+.services__img{
+  position: absolute;
+  top: 100%;
+  right: -100px;
+}
+
+@media (max-width: 750px) {
+  .structure__img{
+    display: none;
+  }
 }
 
 .structure__title{
@@ -2191,23 +2347,41 @@ body{
 .services__top{
   margin-top: 30px;
   position: relative;
-  margin-bottom: 200px;
+  padding-bottom: 200px;
+}
+.servicesI__img{
+  position: absolute;
+  bottom: -20px;
+  left: -128px;
 }
 
 @media (max-width: 1000px) {
   .services__top{
     flex-direction: column; 
-    margin-bottom: 0%;
+    padding-bottom: 0%;
   }
 }
 
 .services__top-intro{
     max-width: 500px;
-    margin-left: 100px;
+    margin-left: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 600px;
+}
+
+.services__top-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57%;
+}
+
+@media (max-width: 970px) {
+  .services__top-content{
+    width: 100%;
+  }
 }
 
 .services__top-image{
@@ -2353,3 +2527,131 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
+
+/* scoll header */
+
+
+.header {
+  height: 80px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;   /* centra verticalmente */
+  background-color: white;
+}
+
+.header--small {
+  height: 70px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between; /* logo a la izquierda, nav a la derecha */
+  align-items: center; /* centra verticalmente */
+  height: 100%; /* ocupa todo el alto del header */
+}
+
+textarea {
+  resize: vertical;  /* solo arriba/abajo */
+}
+
+
+
+/* globals.css */
+/* globals.css */
+/* Importar Figtree desde Google Fonts para que los placeholders la vean */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Aplicar la fuente al body normalmente */
+body {
+  font-family: 'Figtree', sans-serif;
+}
+
+/* Placeholder para inputs y textarea */
+input::placeholder,
+textarea::placeholder,
+.form__input::placeholder,
+.textarea-lined::placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+.form__input::-webkit-input-placeholder,
+.textarea-lined::-webkit-input-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+.form__input::-moz-placeholder,
+.textarea-lined::-moz-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+.form__input:-ms-input-placeholder,
+.textarea-lined:-ms-input-placeholder {
+  font-family: 'Figtree', sans-serif !important;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  opacity: 1;
+  color: #61493B;
+}
+
+/* Placeholder para inputs y textarea */
+.form__input::placeholder,
+.textarea-lined::placeholder {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #61493B; /* color del placeholder */
+  opacity: 1;      /* necesario para Firefox */
+}
+
+.form__input::-webkit-input-placeholder,
+.textarea-lined::-webkit-input-placeholder {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #61493B; /* color para Chrome, Safari, Edge */
+  opacity: 1;
+}
+
+.form__input::-moz-placeholder,
+.textarea-lined::-moz-placeholder {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #61493B; /* color para Firefox */
+  opacity: 1;
+}
+
+.form__input:-ms-input-placeholder,
+.textarea-lined:-ms-input-placeholder {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #61493B; /* color para IE */
+  opacity: 1;
+}
+
+
+
+.form__input,
+.textarea-lined {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: black;
+  color: #61493B;
+}
+
+
+/* input::placeholder{
+  font-size: 300px;
+} */

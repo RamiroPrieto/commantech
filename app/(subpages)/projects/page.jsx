@@ -36,6 +36,21 @@ const Project = ({ src, text, title, download }) => {
 
 const ProjectsPage = () => {
   return (
+    <div className="projects" style={{position: "relative"}}>
+      <Image
+          className='projectsf__img'
+          src="/fondoProjects.svg"
+          alt="About"
+          width={300}
+          height={334}
+      />
+      <Image
+          className='projectsl__img'
+          src="/fondoProjects2.svg"
+          alt="About"
+          width={172}
+          height={214}
+      />
     <div className="container projects__container">
       <h1 className="projects__title">Some of our <span style={{ color: "#A16944" }}>works</span></h1>
       <div className="projects">
@@ -79,7 +94,7 @@ const ProjectsPage = () => {
           <div className="projects__item-right">
             <Image
               className="projects__img-inner"
-              src="/projectImg3.png"
+              src="/projectImg_3.png"
               alt="projects.png"
               width={440}
               height={500}
@@ -131,6 +146,7 @@ const ProjectsPage = () => {
           <Project src="/The-role-of-post-cure-cycle-on-the-thermomechanical-properties-of-soy-based-polyurethane-thermosets.pdf" download="download" title="The role of post-cure cycle on the thermomechanical properties of soy-based polyurethane thermosets" text="In continuity on the research and development of the new biobased polyurethane system previously studied, Franco Armanasco participated on the characterization of the system in order to obtain its mechanical behavior by changing constituent in its formulation as well as its post-cure process. The results gave the research a boost to jump to a next step towards the development of new biobased resin systems." />
         </div> */}
       </div>
+    </div>
     </div>
   )
 }

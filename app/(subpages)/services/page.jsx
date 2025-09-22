@@ -38,10 +38,19 @@ const ServicesPage = () => {
   return (
     <div className='services__section'>
       <div className='services__top'>
+        <Image
+                    className="servicesI__img"
+                    src="/fondoServices1.svg"
+                    alt="svgInicio.svg"
+                    width={255}
+                    height={238}
+                />
         <div className='container'>
-          <div className='services__top-intro'>
-            <h2 className='services__top-title'>What can we offer <span style={{color: '#A16944'}}>you</span>?</h2>
-            <h5 className='services__top-description'>Our aim is to suit your needs. At the following sections you can see what we particularly specialise with.</h5>
+          <div className='services__top-content'>
+            <div className='services__top-intro'>
+              <h2 className='services__top-title'>What can we offer <span style={{color: '#A16944'}}>you</span>?</h2>
+              <h5 className='services__top-description'>Our aim is to suit your needs. At the following sections you can see what we particularly specialise with.</h5>
+            </div>
           </div>
         </div>
         <Image
@@ -71,42 +80,43 @@ const ServicesPage = () => {
                         </div>
                         <div className="structure__items-item structure__services structure__white">
                                         <div className="structure__items-item-top item__white">
-                                            <Image
-                                                className="structure_items-item-svg"
-                                                src="/structure_services2.svg"
-                                                alt="structure_services2.svg"
-                                                width={71}
-                                                height={80}
-                                            />
-                                            <div className='structure__items-item-title'>Drapability and conforming predictions</div>
-                                            <div className='structure__items-item-description'>Load carrying is the <b>most important characteristic</b> in a composite part. Controlling the way the fibers accommodate into the mold will assure you improve specific properties in such a direction. From COMMANTECH we can offer drapability and conforming predictions, also when only aesthetics and look are the objective.</div>
-                                        </div>
-        
-                                    </div>
-                                    <div className="structure__items-item structure__services">
-                                      <div className="structure__items-item-top ">
                                           <Image
-                                              className="structure_items-item-svg"
-                                              src="/structure_services1.svg"
-                                              alt="structure_services1.svg"
-                                              width={71}
-                                              height={80}
-                                          />
-                                          <div className='structure__items-item-title'>Structural integrity studies</div>
-                                          <div className='structure__items-item-description'>From a structural viewpoint a composite should be optimized to have the best specific fiber oriented properties. We offer you a complete characterization of mechanical properties through inverse engineering FEM structural analysis and non destructive testing to evaluate if your part fits with the purpose it has been designed for.</div>
-                                      </div>
-                                  </div>
-                                  <div className="structure__items-item structure__services structure__white">
-                                    <div className="structure__items-item-top item__white">
-                                        <Image
                                             className="structure_items-item-svg"
-                                            src="/structure_services1.svg"
+                                            src="/structure_services2.svg"
                                             alt="structure_services1.svg"
                                             width={71}
                                             height={80}
                                         />
                                         <div className='structure__items-item-title'>Potential constituents and tooling</div>
                                         <div className='structure__items-item-description'>Searching for adequate constituent materials is not always an easy task if you want to try with non conventional composite materials. Gaining confidence in new materials developed in the market will let you offer novel designs. We can find out the best cost/performance ratio constituents as well as the right tooling equipment for building your composite part.</div>
+                                        </div>
+        
+                                    </div>
+                                    <div className="structure__items-item structure__services">
+                                      <div className="structure__items-item-top ">
+                                        <Image
+                                                className="structure_items-item-svg"
+                                                src="/services3.svg"
+                                                alt="structure_services2.svg"
+                                                width={71}
+                                                height={80}
+                                            />
+                                            <div className='structure__items-item-title'>Drapability and conforming predictions</div>
+                                            <div className='structure__items-item-description'>Load carrying is the <b>most important characteristic</b> in a composite part. Controlling the way the fibers accommodate into the mold will assure you improve specific properties in such a direction. From COMMANTECH we can offer drapability and conforming predictions, also when only aesthetics and look are the objective.</div>
+                                        
+                                      </div>
+                                  </div>
+                                  <div className="structure__items-item structure__services structure__white">
+                                    <div className="structure__items-item-top item__white">
+                                       <Image
+                                              className="structure_items-item-svg"
+                                              src="/structure_services2.svg"
+                                              alt="structure_services1.svg"
+                                              width={71}
+                                              height={80}
+                                          />
+                                          <div className='structure__items-item-title'>Structural integrity studies</div>
+                                          <div className='structure__items-item-description'>From a structural viewpoint a composite should be optimized to have the best specific fiber oriented properties. We offer you a complete characterization of mechanical properties through inverse engineering FEM structural analysis and non destructive testing to evaluate if your part fits with the purpose it has been designed for.</div>
                                     </div>
                                     
                                 </div>
@@ -114,7 +124,7 @@ const ServicesPage = () => {
                                   <div className="structure__items-item-top">
                                       <Image
                                           className="structure_items-item-svg"
-                                          src="/structure_services1.svg"
+                                          src="/services4.svg"
                                           alt="structure_services1.svg"
                                           width={71}
                                           height={80}
@@ -128,7 +138,7 @@ const ServicesPage = () => {
                                 <div className="structure__items-item-top item__white">
                                     <Image
                                         className="structure_items-item-svg"
-                                        src="/structure_services1.svg"
+                                        src="/services5.svg"
                                         alt="structure_services1.svg"
                                         width={71}
                                         height={80}

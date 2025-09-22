@@ -9,22 +9,25 @@ export const metadata = {
 const AboutPage = () => {
   return (
     <div className="about">
-        <div className='container about__relative'>
+        <div style={{position :"relative"}}>
             <Image
-                className='about__image'
-                src="/arrowAbout.svg"
+                className='about__img'
+                src="/fondoAbout1.svg"
                 alt="About"
                 width={172}
                 height={214}
             />
-            <Image
-                className='about__image image__left'
-                src="/aboutArrow.svg"
-                alt="About"
-                width={245}
-                height={164}
-            />
-            <div className='about__title-container'><h2 className='about__title'>Let&apos;s get to  <span className='about__title-highlight'>know</span> each other </h2></div>
+            <div className='container about__relative'>
+                <Image
+                    className='about__image image__left'
+                    src="/aboutArrow.svg"
+                    alt="About"
+                    width={245}
+                    height={164}
+                />
+                <div className='about__title-container'><h2 className='about__title'>Let&apos;s get to  <span className='about__title-highlight'>know</span> each other </h2></div>
+            </div>
+
         </div>
         <div className='looperContainer' id='section'>
         {/* <Image className='intro__looper' src="Maskgroup.png" alt="looperIntro" height={400} width={300}/> */}
@@ -38,33 +41,24 @@ const AboutPage = () => {
             />
           </div>
       <div className='intro container'>
-
-        <div className='intro__content'>
+        <div className='intro__content-container'>
+        <div className='intro__content intro__about'>
           <div className='intro__content-title'>Who we are</div>
           <div className='intro__content-text about__text'>
               This consultancy is the result of more than six years of experience and expertise in composites. It was founded and developed out of the need to explore <span className='intro__content-sub'>bio-based composite solutions</span>  that can truly help change the current paradigm of how composites are made today. This is a gradual process, requiring many trials and tests. That is where COMMANTECH, with its vast experience and strong international network, can make a difference.
           </div>
         </div>
-
+        </div>
       </div>
     </div>
         <div className='container'>
             <div className='about__founder'>
                 <div className='about__founder-container'>
-                    {/* <Image
-                        className='about__ornament'
-                        src="/ornament.png"
-                        alt="ornament"
-                        width={166}
-                        height={224}
-                        
-                    /> */}
                     <Image
                         className="about__founder-img"
-                        src="/francoImg.png"
+                        src="/francoImg.jpeg"
                         alt="Franco Armanasco"
-                        width={170}
-                        height={170}
+                        fill
                         priority
                     />
                 </div>
@@ -126,7 +120,7 @@ const AboutPage = () => {
                 </div>
             </div>
             <div className='about__founder reverse'>
-                <div className='about__founder-info'>
+                <div className='about__founder-info reverse__info'>
                     <div className='about__founder-name'>Eric Uranga</div>
                     <div className='about__founder-subtitle'>Marine engineer</div>
                     <div className='about__founder-text'>
@@ -172,21 +166,12 @@ I combine skills in the use of 2D and 3D pleasure craft design software with exp
                         </div>
                     </div>
                 </div>
-                <div className='about__founder-container'>
-                    {/* <Image
-                        className='about__ornament'
-                        src="/ornament.png"
-                        alt="ornament"
-                        width={166}
-                        height={224}
-                        
-                    /> */}
+                <div className="about__founder-container">
                     <Image
-                        className="about__founder-img"
                         src="/ericImg.jpg"
                         alt="Eric Uranga"
-                        width={170}
-                        height={170}
+                        fill
+                        className="about__founder-img"
                         priority
                     />
                 </div>
