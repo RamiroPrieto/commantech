@@ -6,6 +6,7 @@ import AnalyticsComponent from './components/AnalyticsComponent'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import Image from "next/image";
 import Head from "@/app/Head";
+import { icons } from 'react-icons'
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -15,6 +16,9 @@ const figtree = Figtree({
 export const metadata = {
   title: 'COMMANTECH - Composites Manufacturing Consultancy',
   description: 'Commantech',
+  icons: {
+    icon: '/favicon-commantech.svg',
+  },
 }
 
 export default function RootLayout({

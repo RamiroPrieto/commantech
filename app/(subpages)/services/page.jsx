@@ -88,7 +88,7 @@ const ServicesPage = () => {
                                             height={80}
                                         />
                                         <div className='structure__items-item-title'>Potential constituents and tooling</div>
-                                        <div className='structure__items-item-description'>Searching for adequate constituent materials is not always an easy task if you want to try with non conventional composite materials. Gaining confidence in new materials developed in the market will let you offer novel designs. We can find out the best cost/performance ratio constituents as well as the right tooling equipment for building your composite part.</div>
+                                        <div className='structure__items-item-description'>Searching for adequate constituent materials is not always an easy task if you want to try with non conventional composite materials. Gaining <b>confidence in new materials</b> developed in the market will let you offer novel designs. We can find out the best cost/performance ratio constituents as well as the right tooling equipment for building your composite part.</div>
                                         </div>
         
                                     </div>
@@ -116,7 +116,7 @@ const ServicesPage = () => {
                                               height={80}
                                           />
                                           <div className='structure__items-item-title'>Structural integrity studies</div>
-                                          <div className='structure__items-item-description'>From a structural viewpoint a composite should be optimized to have the best specific fiber oriented properties. We offer you a complete characterization of mechanical properties through inverse engineering FEM structural analysis and non destructive testing to evaluate if your part fits with the purpose it has been designed for.</div>
+                                          <div className='structure__items-item-description'>From a structural viewpoint a composite should be optimized to have the best specific fiber oriented properties. We offer you a <b>complete characterization</b> of mechanical properties through inverse engineering FEM structural analysis and non destructive testing to evaluate if your part fits with the purpose it has been designed for.</div>
                                     </div>
                                     
                                 </div>
@@ -130,7 +130,7 @@ const ServicesPage = () => {
                                           height={80}
                                       />
                                       <div className='structure__items-item-title'>Process quality control monitoring</div>
-                                      <div className='structure__items-item-description'>Knowing when a part is well made or within the margins accepted in the industry is a crucial point. From COMMANTECH we can transfer knowledge to your company giving you the tools and good understanding to make a proper quality control.</div>
+                                      <div className='structure__items-item-description'>Knowing when a part is well made or within the margins accepted in the industry is a crucial point. From COMMANTECH we can transfer knowledge to your company giving you the <b>tools and good understanding</b> to make a proper quality control.</div>
                                   </div>
                                   
                               </div>
@@ -144,7 +144,7 @@ const ServicesPage = () => {
                                         height={80}
                                     />
                                     <div className='structure__items-item-title'>Project management</div>
-                                    <div className='structure__items-item-description'>Planning each part fabrication is essential in your project to be on time and with the best resources exploitation. From COMMANTECH we can offer you a complete project management that will suit your requirements.</div>
+                                    <div className='structure__items-item-description'>Planning each part fabrication is essential in your project to be on time and with the <b>best resources exploitation</b>. From COMMANTECH we can offer you a complete project management that will suit your requirements.</div>
                                 </div>
                               
                             </div>

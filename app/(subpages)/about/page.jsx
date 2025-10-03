@@ -20,10 +20,10 @@ const AboutPage = () => {
             <div className='container about__relative'>
                 <Image
                     className='about__image image__left'
-                    src="/aboutArrow.svg"
+                    src="/aboutArrow.png"
                     alt="About"
-                    width={245}
-                    height={164}
+                    width={179}
+                    height={184}
                 />
                 <div className='about__title-container'><h2 className='about__title'>Let&apos;s get to  <span className='about__title-highlight'>know</span> each other </h2></div>
             </div>
